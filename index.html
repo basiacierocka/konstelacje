@@ -162,15 +162,23 @@
             <div class="main-contact-section" id="kontakt">
               <div class="main-contact-section-text">
                 <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Kontakt</div>
-                <p class="mdl-typography--font-light">
+                <div class="mdl-typography--font-light">
                   Konstelacje Polska<br>
                   Katarzyna Węgrzyn<br>
                   ADRES:<br>
                   Miejsce sesji i warsztatów różnią się w zależności od potrzeb klienta.<br>
                   REGON:<br>
                   NIP:<br>
-                  napisz do mnie:<br>
-                </p>
+                  <div class="main-contact-form">napisz do mnie:
+                    <form action="https://formspree.io/basiacierocka@gmail.com"
+                      method="POST">
+                      <input placeholder="Imię i nazwisko" type="text" name="name">
+                      <input placeholder="Twój adres email" type="email" name="_replyto">
+                      <input placeholder="Twoja wiadomość" type="text" name="message">
+                      <input type="submit" value="Send">
+                    </form>
+                  </div>
+                </div>
               </div>
               <div class="main-contact-section-image"></div>
             </div>
