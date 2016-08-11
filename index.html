@@ -7,202 +7,188 @@
     <title>Konstelacje dla biznesu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.min.css">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-
-      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+      <div class="main-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
-          <span class="android-title mdl-layout-title">
-            <img class="logo-image" src="images/wiatrak.jpg">
-          </span>
+          <a href="index.html">
+            <span class="main-title mdl-layout-title">
+              <img class="logo-image" src="images/wiatrak.jpg">
+            </span>
+          </a>
           <!-- Add spacer, to align navigation to the right in desktop -->
-          <div class="android-header-spacer mdl-layout-spacer"></div>
-          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-
-            <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="search-field">
-            </div>
-          </div>
+          <div class="main-header-spacer mdl-layout-spacer"></div>
+          <div class="main-search-box mdl-textfield mdl-js-textfield
+            mdl-textfield--expandable mdl-textfield--floating-label
+            mdl-textfield--align-right mdl-textfield--full-width"></div>
           <!-- Navigation -->
-          <div class="android-navigation-container">
-            <nav class="android-navigation mdl-navigation">
+          <div class="main-navigation-container">
+            <nav class="main-navigation mdl-navigation">
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#misja">Misja</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#oferta">Oferta</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#kontakt">Kontakt</a>
             </nav>
           </div>
-          <span class="android-mobile-title mdl-layout-title">
-            <a href="index.html"> <img class="logo-image" src="images/wiatrak.jpg"></a>
-          </span>
         </div>
       </div>
 
-      <div class="android-drawer mdl-layout__drawer">
-        <span class="mdl-layout-title">
-          <img class="drawer-logo-image" src="images/wiatrak.jpg">
-        </span>
+      <div class="main-drawer mdl-layout__drawer">
+        <a href="index.html">
+          <span class="mdl-layout-title">
+            <img class="drawer-logo-image" src="images/wiatrak.jpg">
+          </span>
+        </a>
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="#misja">Misja</a>
           <a class="mdl-navigation__link" href="#oferta">Oferta</a>
           <a class="mdl-navigation__link" href="#kontakt">Kontakt</a>
-          <div class="android-drawer-separator"></div>
+            <div class="main-drawer-separator"></div>
         </nav>
       </div>
 
-      <div class="android-content mdl-layout__content">
+      <div class="main-content mdl-layout__content">
         <a name="top"></a>
-        <div class="android-be-together-section mdl-typography--text-center">
-          <div class="logo-font android-slogan">Odkryj konstelacje</div>
-          <div class="logo-font android-sub-slogan">poczuj nowe w morzu starego</div>
-          <div class="logo-font android-create-character">
+          <div class="main-welcome-section mdl-typography--text-center">
+            <div class="logo-font main-slogan">Odkryj konstelacje</div>
+            <div class="logo-font main-sub-slogan">poczuj nowe w morzu starego</div>
+            <div class="video-contenair">
+              <video playsinline autoplay muted loop poster="images/women.jpg" id="bgvid">
+                <source src="film.mp4" type="video/mp4">
+              </video>
+            </div>
           </div>
+
+          <div class="main-mission-section" id="misja">
+            <div class="main-mission-section-text">
+              <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Misja</div>
+              <p class="mdl-typography--font-light">
+                Konstelacje i myślenie systemowe to nowa metoda w doradztwie i zarządzaniu oparta na
+                fenomenie „pola morfogenetycznego, i „systemowej nieświadomości” .
+                To dyscyplina widzenia całości obrazu - See BiG PICTURE.
+                Konstelacje są nowym modelem pracy z właścicielem firmy, prezesem, team leaderem,
+                zespołem czy rodziną, opartym o doświadczenie klienta ( client expirience).
+                Autorem ustawień jest niemiecki psycholog Bert Hellinger, specjalizujący się w konstelacjach
+                rodzinnych.
+                Ciekawym zjawiskiem, które obserwuje się przy ustawieniach, jest to, że pracownicy często w
+                firmie szukają dla siebie i znajdują miejsce, które znają z systemu rodzinnego. Jeśli ktoś, np. w
+                rodzinie jest outsiderem, również w pracy zajmuje często takie miejsce.
+                Maria Senftleben-Gudrich i Richard Graf z czasem poszerzyli zastosowanie tej metody o
+                możliwość prowadzenia ustawień w biznesie i organizacjach, które swoją strukturą w wielu
+                przypadkach bardzo przypominają rodzinną hierarchię.
+                Porządek w systemie to powodzenie, zdrowie, udany związek, wyniki w pracy. Zaburzone
+                mechanizmy porządku w systemie, często nieświadome, są odpowiedzialne za niepewność, urazy,
+                blokady, wycofanie, choroby psychosomatyczne, problemy finansowe, konflikty i inne straty.
+                Klasyczne metody zajmują się tym co JEST widoczne i deklarowane, patrz 10%. Oznacza to
+                pracę na skutkach, leczenie objawów, głaskanie powierzchni.
+                Czy taki model w długiej perspektywie może być skuteczny?
+                <br>
+                <a href="" class="main-link mdl-typography--font-light">Przeczytaj więcej</a>
+              </p>
+            </div>
+            <div class="main-mission-section-image"></div>
+          </div>
+
+          <div class="main-cards-section" id="oferta">
+            <div class="main-section-title mdl-typography--display-1-color-contrast">Oferta</div>
+            <div class="main-card-container mdl-grid">
+              <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-card__media">
+                  <img src="images/business.jpg">
+                </div>
+                <div class="mdl-card__title">
+                  <h4 class="mdl-card__title-text">BUSINESS CONSTELLATION</h4>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  <span class="mdl-typography--font-light mdl-typography--subhead">Dla właścicieli firm, prezesów, dyrektorów i team leaderów.</span>
+                </div>
+                <div class="mdl-card__actions">
+                  <a class="main-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                  Więcej...
+                    <i class="material-icons">chevron_right</i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-card__media">
+                  <img src="images/coaching.jpg">
+                </div>
+                <div class="mdl-card__title">
+                  <h4 class="mdl-card__title-text">COACHNIG CONSTELLATION</h4>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  <span class="mdl-typography--font-light mdl-typography--subhead">Dla trenerów, coachów, konsultantów biznesu i psychologów.</span>
+                </div>
+                <div class="mdl-card__actions">
+                  <a class="main-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                    Więcej...
+                    <i class="material-icons">chevron_right</i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-card__media">
+                  <img src="images/rodzina.jpg">
+                </div>
+                <div class="mdl-card__title">
+                  <h4 class="mdl-card__title-text">FAMILY CONSTELLATION</h4>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  <span class="mdl-typography--font-light mdl-typography--subhead">Dla rodzin i pasjonatów rozwoju osobistego.</span>
+                </div>
+                <div class="mdl-card__actions">
+                  <a class="main-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                  Więcej...
+                    <i class="material-icons">chevron_right</i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="main-contact-section" id="kontakt">
+                <div class="main-contact-section-text">
+                  <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Kontakt</div>
+                  <p class="mdl-typography--font-light">
+                    <br>
+                  </p>
+                </div>
+                <div class="main-contact-section-image"></div>
+              </div>
+              <video><video
+            </div>
+          </div>
+
+          <footer class="footer mdl-mega-footer" id="footer">
+            <div class="mdl-mega-footer--top-section">
+              <div class="mdl-mega-footer--left-section">
+                <button class="mdl-mega-footer--social-btn"></button>
+                &nbsp;
+                <button class="mdl-mega-footer--social-btn"></button>
+                &nbsp;
+                <button class="mdl-mega-footer--social-btn"></button>
+              </div>
+              <div class="mdl-mega-footer--right-section">
+                <a class="mdl-typography--font-light" href="#top">
+                  do góry
+                </a>
+              </div>
+            </div>
+
+            <div class="mdl-mega-footer--middle-section">
+              <p class="mdl-typography--font-light">:by 2016 Basia Cierocka</p>
+            </div>
+          </footer>
+
         </div>
-
-        <div class="android-customized-section" id="misja">
-          <div class="android-customized-section-text">
-            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Misja</div>
-            <p class="mdl-typography--font-light">
-              Konstelacje i myślenie systemowe to nowa metoda w doradztwie i zarządzaniu oparta na
-
-fenomenie „pola morfogenetycznego, i „systemowej nieświadomości” .
-
-To dyscyplina widzenia całości obrazu - See BiG PICTURE.
-
-Konstelacje są nowym modelem pracy z właścicielem firmy, prezesem, team leaderem,
-
-zespołem czy rodziną, opartym o doświadczenie klienta ( client expirience).
-
-Autorem ustawień jest niemiecki psycholog Bert Hellinger, specjalizujący się w konstelacjach
-
-rodzinnych.
-
-Ciekawym zjawiskiem, które obserwuje się przy ustawieniach, jest to, że pracownicy często w
-
-firmie szukają dla siebie i znajdują miejsce, które znają z systemu rodzinnego. Jeśli ktoś, np. w
-
-rodzinie jest outsiderem, również w pracy zajmuje często takie miejsce.
-
-Maria Senftleben-Gudrich i Richard Graf z czasem poszerzyli zastosowanie tej metody o
-
-możliwość prowadzenia ustawień w biznesie i organizacjach, które swoją strukturą w wielu
-
-przypadkach bardzo przypominają rodzinną hierarchię.
-
-Porządek w systemie to powodzenie, zdrowie, udany związek, wyniki w pracy. Zaburzone
-
-mechanizmy porządku w systemie, często nieświadome, są odpowiedzialne za niepewność, urazy,
-
-blokady, wycofanie, choroby psychosomatyczne, problemy finansowe, konflikty i inne straty.
-
-Klasyczne metody zajmują się tym co JEST widoczne i deklarowane, patrz 10%. Oznacza to
-
-pracę na skutkach, leczenie objawów, głaskanie powierzchni.
-
-Czy taki model w długiej perspektywie może być skuteczny?
-              <br>
-              <a href="" class="android-link mdl-typography--font-light">Przeczytaj więcej</a>
-            </p>
-          </div>
-          <div class="android-customized-section-image"></div>
-        </div>
-
-        <div class="android-more-section" id="oferta">
-          <div class="android-section-title mdl-typography--display-1-color-contrast">Oferta</div>
-          <div class="android-card-container mdl-grid">
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/business.jpg">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">BUSINESS CONSTELLATION</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Dla właścicieli firm, prezesów, dyrektorów i team leaderów.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Więcej...
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/coaching.jpg">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">COACHNIG CONSTELLATION</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Dla trenerów, coachów, konsultantów biznesu i psychologów.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Więcej...
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/rodzina.jpg">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">FAMILY CONSTELLATION</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Dla rodzin i pasjonatów rozwoju osobistego.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Więcej...
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-            <div class="android-customized-section" id="kontakt">
-              <div class="android-customized-section-text">
-                <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Kontakt</div>
-                <p class="mdl-typography--font-light">
-
-                  <br>
-                  <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
-                </p>
-              </div>
-              <div class="android-customized-section-image"></div>
-            </div>
-
-          </div>
-        </div>
-
-        <footer class="android-footer mdl-mega-footer" id="footer">
-          <div class="mdl-mega-footer--top-section">
-            <div class="mdl-mega-footer--left-section">
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
-            </div>
-            <div class="mdl-mega-footer--right-section">
-              <a class="mdl-typography--font-light" href="#top">
-                do góry
-                <i class="material-icons">expand_less</i>
-              </a>
-            </div>
-          </div>
-
-          <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">:by 2016 Basia Cierocka</p>
-          </div>
-
-        </footer>
       </div>
-    </div>
     <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <script>
+    $( window ).load(function() { $( '#bgvid' ).get(0).play();});
+ </script>
+    </body>
+</html>
