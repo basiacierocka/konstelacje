@@ -57,6 +57,14 @@ a img{
   background-color: white;
 }
 
+.main-company-name {
+  text-decoration: none;
+  font-size: 2em;
+  color: #8B8381;
+}
+.main-company-name b{
+  color: red;
+}
   .main-header .material-icons {
     color: #767777 !important;
   }
@@ -120,7 +128,7 @@ a img{
   .android-cards-button {
     -webkit-order: 3;
         -ms-flex-order: 3;
-            order: 3;
+            order: 3;titletitle
   }
 
 
@@ -199,30 +207,30 @@ a img{
 .main-link .material-icons {
     position: relative;
     top: -1px;
-    vertical-align: middle;
+    vertical-align: middle;title
   }
 
 .mdl-typography--font-light{
   text-align: left;
 }
-.main-mission-section, .main-contact-section {
+.main-method-section, .main-contact-section {
   text-align: center;
 }
 
-.main-mission-section-text,.main-contact-section-text {
+.main-method-section-text,.main-contact-section-text {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
   padding: 80px 16px 0 16px;
 }
 
-  .main-mission-section-text p {
+  .main-method-section-text p {
     padding-top: 16px;
   }
 
 .main-contact-section-image {
   background: url('images/system.jpg') center top no-repeat;
-  background-size: cover;
+  background-size: cover;title
   height: 400px;
 }
 
