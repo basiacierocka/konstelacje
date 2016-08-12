@@ -1,3 +1,4 @@
+
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
  *
@@ -213,25 +214,55 @@ a img{
 .mdl-typography--font-light{
   text-align: left;
 }
+
 .main-method-section, .main-contact-section {
   text-align: center;
 }
 
 .main-method-section-text,.main-contact-section-text {
-  max-width: 500px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   padding: 80px 16px 0 16px;
 }
 
-  .main-method-section-text p {
-    padding-top: 16px;
-  }
+.main-method-section-text p {
+  padding-top: 16px;
+}
 
 .main-contact-section-image {
-  background: url('images/system.jpg') center top no-repeat;
-  background-size: cover;title
-  height: 400px;
+  margin-top: 20px;
+  background: url('images/krople.jpg') center no-repeat;
+  background-size: cover;
+  width: 1000px;
+  height: 250px;
+}
+
+.contact-cell{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  line-height: 1.3em;
+  font-size: 1.1em;
+  text-align: left;
+  color: #A09FA4;
+}
+.contact-cell input {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+  font-size: 0.8em;
+}
+.main-contact-form{
+  text-align: center;
+  padding: 20px;
+  margin:10px;
+}
+
+.mdl-button{
+  margin-top: 10px;
 }
 
 .main-cards-section {
@@ -293,7 +324,9 @@ a img{
   .footer a:hover {
     color: #8bc34a;
   }
-
+.designer {
+  font-size:0.7em;
+}
   .footer .mdl-mega-footer--top-section::after {
     border-bottom: none;
   }
@@ -314,7 +347,6 @@ a img{
     position: relative;
     top: 6px;
   }
-
 
 .main-link-menu:hover {
   cursor: pointer;
@@ -342,8 +374,8 @@ a img{
   /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
      consecutive "+" operators in some cases. Therefore, we need to use both
      here to cover all the bases. */
-  .android.main-search-box.is-focused ~ .android-mobile-title,
-  .main-search-box.is-focused + .main-navigation-container + .android-mobile-title {
+  .android.main-search-box.is-focused ~ .main-mobile-title,
+  .main-search-box.is-focused + .main-navigation-container + .main-mobile-title {
     opacity: 0;
   }
 
