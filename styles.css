@@ -199,12 +199,15 @@ a img{
 .main-slogan {
   font-size: 60px;
   padding-top: 170px;
+  color: #2B070A;
 }
 
 .main-sub-slogan {
   font-size: 21px;
   padding-top: 24px;
+  color: #2B070A;
 }
+
 .main-link .material-icons {
     position: relative;
     top: -1px;
