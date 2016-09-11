@@ -61,10 +61,10 @@ a img{
 .main-company-name {
   text-decoration: none;
   font-size: 2em;
-  color: #8B8381;
+  color: #F2EEEF;
 }
 .main-company-name b{
-  color: #908987;
+  color: #F2EEEF;
 }
   .main-header .material-icons {
     color: #767777 !important;
@@ -149,7 +149,7 @@ a img{
   }
 
   .main-drawer span.mdl-navigation__link.mdl-navigation__link {
-    color: #8bc34a;
+    color: #F2EEEF;
   }
 
   .main-drawer .mdl-layout-title {
@@ -241,6 +241,10 @@ a img{
   height: 250px;
 }
 
+#accordion h3{
+  font-size: 1em;
+  background-color: #F2EEEF;
+}
 .contact-cell{
   margin-top: 40px;
   margin-bottom: 40px;
