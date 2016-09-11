@@ -64,7 +64,7 @@ a img{
   color: #8B8381;
 }
 .main-company-name b{
-  color: red;
+  color: #908987;
 }
   .main-header .material-icons {
     color: #767777 !important;
@@ -199,7 +199,7 @@ a img{
 .main-slogan {
   font-size: 60px;
   padding-top: 170px;
-  color: #2B070A;
+  color: #ffffff;
 }
 
 .main-sub-slogan {
@@ -235,7 +235,7 @@ a img{
 
 .main-contact-section-image {
   margin-top: 20px;
-  background: url('images/krople.jpg') center no-repeat;
+  background: url('images/kontakt.jpg') center no-repeat;
   background-size: cover;
   width: 1000px;
   height: 250px;
