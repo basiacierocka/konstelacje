@@ -60,22 +60,22 @@ a img{
 .main-company-name {
   text-decoration: none;
   font-size: 2em;
-  color: #F2EEEF;
+  color: #ccc;
 }
 .main-company-name b{
-  color: #908987;
+  color: #ccc;
 }
   .main-header .material-icons {
-    color: #767777 !important;
+    color: #ccc !important;
   }
 
   .main-header .mdl-layout__drawer-button {
     background: transparent;
-    color: #767777;
+    color: #ccc;
   }
 
   .main-header .mdl-navigation__link {
-    color: #757575;
+    color: #ccc;
     font-weight: 700;
     font-size: 14px;
   }
@@ -231,7 +231,7 @@ a img{
 .main-method-section-text p {
   padding-top: 16px;
 }
- 
+
 .tabs-list{
     list-style: none;
     white-space: nowrap;
@@ -270,15 +270,16 @@ a img{
 
 .main-contact-section-image {
   margin-top: 20px;
+  margin-left: 10px;
   background: url('images/kontakt.jpg') center no-repeat;
   background-size: cover;
-  width: 1000px;
-  height: 250px;
+  width: 300px;
+  height: 200px;
 }
 
 #accordion h3{
   font-size: 1em;
-  background-color: #F2EEEF;
+  background-color: #ccc;
 }
 .contact-cell{
   margin-top: 40px;
@@ -435,6 +436,7 @@ a img{
 
   .main-slogan {
     font-size: 26px;
+    text-shadow: 4px 4px #000 !important;
     margin: 0 16px;
     padding-top: 24px;
   }
@@ -442,6 +444,7 @@ a img{
   .main-sub-slogan {
     font-size: 16px;
     margin: 0 16px;
+    text-shadow: 4px 4px #000 !important;
     padding-top: 8px;
   }
 
