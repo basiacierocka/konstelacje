@@ -1,24 +1,6 @@
-/**
- * Copyright 2015 Google Inc. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 body {
   margin: 0;
 }
-
-/* Disable ugly boxes around images in IE10 */
 a img{
   border: 0px;
 }
@@ -28,155 +10,60 @@ a img{
   color: #fff;
 }
 
-::selection {
-  background-color: rgba(255, 0, 0, 0.5);
-  color: #fff;
+.header-container span{
+font-size: 3.5em !important;
+color:#bdbdbd;
+}
+.header-container span b{
+  color:#fff;
 }
 
-.main-search-box .mdl-textfield__input {
-  color: rgba(0, 0, 0, 0.87);
-}
 
-.main-header .mdl-menu__container {
-  z-index: 50;
-  margin: 0 !important;
-}
-
-.logo-image {
-  height: 60px;
-  width: 75px;
-}
-
-.drawer-logo-image{
-  height: 100%;
-  width: 100%;
-}
-
-.main-header {
-  overflow: visible;
-  background-color: white;
-}
-
-.main-company-name {
-  text-decoration: none;
-  font-size: 2em;
-  color: #ccc;
-}
-.main-company-name b{
-  color: #ccc;
-}
-  .main-header .material-icons {
-    color: #ccc !important;
-  }
-
-  .main-header .mdl-layout__drawer-button {
-    background: transparent;
-    color: #ccc;
-  }
-
-  .main-header .mdl-navigation__link {
-    color: #ccc;
-    font-weight: 700;
-    font-size: 14px;
-  }
-
-  .main-navigation-container {
-    /* Simple hack to make the overflow happen to the left instead... */
-    direction: rtl;
-    -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1;
-    width: 500px;
-    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .main-navigation {
-    /* ... and now make sure the content is actually LTR */
-    direction: ltr;
-    -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    width: 800px;
-  }
-
-  .main-search-box.is-focused + .main-navigation-container {
-    opacity: 0;
-    width: 100px;
-  }
-
-  .main-navigation .mdl-navigation__link {
-    display: inline-block;
-    height: 60px;
-    line-height: 68px;
-    background-color: transparent !important;
-    border-bottom: 4px solid transparent;
-  }
-
-    .main-navigation .mdl-navigation__link:hover {
-      border-bottom: 4px solid rgba(255, 0, 0, 0.5);
-    }
-
-  .main-search-box {
-    -webkit-order: 2;
-        -ms-flex-order: 2;
-            order: 2;
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-
-  .android-cards-button {
-    -webkit-order: 3;
-        -ms-flex-order: 3;
-            order: 3;titletitle
-  }
-
-
-.main-drawer {
-  border-right: none;
-}
-
-  .main-drawer-separator {
-    height: 1px;
-    background-color: #dcdcdc;
-    margin: 8px 0;
-  }
-
-  .main-drawer .mdl-navigation__link.mdl-navigation__link {
-    font-size: 14px;
-    color: #757575;
-  }
-
-  .main-drawer span.mdl-navigation__link.mdl-navigation__link {
-    color: #8bc34a;
-  }
-
-  .main-drawer .mdl-layout-title {
-    position: relative;
-    background: #FAFAFA;
-    height: 160px;
-  }
-
-    .main-drawer .logo-image {
-      position: absolute;
-      bottom: 16px;
-    }
-
-.main-welcome-section{
+.slogan {
   position: relative;
-  width: auto;
-  background-color: #f3f3f3;
-  background: center 30% no-repeat;
-  background-size: cover;
+  top: 200px;
+  text-align: center;
+  line-height: 30px;
 }
-.video-contenair {
-    max-height: 520px;
+
+.logo-image{
+  width:90px;
+  height:90px;
+  z-index: 15;
+  display:inline;
+}
+
+.slogan h1{
+color:#880e4f;
+display:inline;
+color:#000;
+}
+
+.warsztaty-demo{
+font-size: 15px;
+line-height: 2.3em;
+}
+
+.fixed-action-btn .btn-large{
+  width:150px !important;
+  height:150px !important;
+}
+
+.header-container{
+  position: fixed !important;
+  top:0px;
+  width:100%;
+  z-index: 10;
+}
+.main-content{
+  max-height: 700px;
 }
 
 #bgvid{
   position: relative;
-  top: 50px;
   left: 50%;
+  top:0;
+  height:900px;
   min-width: 100%;
   width: auto;
   z-index: -100;
@@ -184,271 +71,125 @@ a img{
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url(images/women.jpg) no-repeat;
+  background: url(images/business.jpg) no-repeat;
   background-size: cover;
 }
 
-.logo-font {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  line-height: 1;
-  color: #fff;
-  font-weight: 500;
+.oferta-container, .faq-container, .kontakt-container, .metoda-container, .misja-container, .narzedzia-container{
+  padding-top: 100px;
 }
 
-.main-slogan {
-  font-size: 60px;
-  padding-top: 170px;
-  color: #ffffff;
+.gray-background{
+  background-color: #aaa;
+  margin: 30px 0px;
+  padding: 30px 20px;
+  color:#fff;
 }
 
-.main-sub-slogan {
-  font-size: 21px;
-  padding-top: 24px;
-  color: #2B070A;
+.gray-background img{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
 }
 
-.main-link .material-icons {
-    position: relative;
-    top: -1px;
-    vertical-align: middle;title
-  }
-
-.mdl-typography--font-light{
-  text-align: left;
+.values p{
+  text-align:left;
+  padding-left: 10px;
 }
 
-.main-method-section, .main-contact-section {
-  text-align: center;
+.misja-container img{
+  width:100px;
+  height:100px;
+  border-radius:50%;
 }
 
-.main-method-section-text,.main-contact-section-text {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 80px 16px 0 16px;
-}
-
-.main-method-section-text p {
-  padding-top: 16px;
-}
-
-.tabs-list{
-    list-style: none;
-    white-space: nowrap;
-    display: block;
-    text-align: left;
-    margin-bottom:0px;
-    line-height: 18px !important;
-    padding:0px;
-}
-  .tabs-list li{
-    display: inline;
-    border: solid 1px #ccc;
-    line-height: 0px !important;
-    padding: 10px 40px 0px 40px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-
-  }
-
-.tabs-list li a{
-  text-decoration: none;
-  font-weight: 700;
-}
-
-.tabs-text{
+.metoda-container p{
   text-align: justify;
-  border: solid 1px #ccc;
-  border-top-right-radius: 5px;
-  z-index: 5;
+  text-indent: 20px;
 }
 
-.tabs-text p {
-  padding: 5px 20px;
-  text-indent:40px;
+.carousel-image-container{
+  height:500px !important;
 }
 
-.main-contact-section-image {
-  margin-top: 20px;
-  margin-left: 10px;
-  background: url('images/kontakt.jpg') center no-repeat;
-  background-size: cover;
-  width: 300px;
+.carousel .carousel-item img{
+  height: 90% !important;
+  width:90% !important;
+
+}
+
+.card .card-image .card-title{
+  color: #000 !important;
+}
+
+#oferta .card .card-image img{
+  height: 240px;
+}
+
+.metoda-container p{
+  font-size:18px;
+}
+
+.metoda-link {
+  color: #757575;
+}
+.metoda-link:hover {
+  color: red;
+}
+
+#narzedzia .card{
   height: 200px;
 }
 
-#accordion h3{
-  font-size: 1em;
-  background-color: #ccc;
-}
-.contact-cell{
-  margin-top: 40px;
-  margin-bottom: 40px;
-  line-height: 1.3em;
-  font-size: 1.1em;
-  text-align: left;
-  color: #A09FA4;
-}
-.contact-cell input {
-  font-size:18px;
-  padding:10px 10px 10px 5px;
-  display:block;
-  width:300px;
-  border:none;
-  border-bottom:1px solid #757575;
-  font-size: 0.8em;
-}
-.main-contact-form{
-  text-align: center;
-  padding: 20px;
-  margin:10px;
+#narzedzia .card .card-image{
+  max-height: 90px;
+  max-width: 50px;
+  display: inline;
 }
 
-.mdl-button{
-  margin-top: 10px;
+#narzedzia .card .card-image img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin: 4px;
+  display: inline;
+  float:left;
 }
 
-.main-cards-section {
-  padding: 80px 0;
-  max-width: 1044px;
-  margin-left: auto;
-  margin-right: auto;
+#narzedzia .card .card-content p{
+  font-size: 12px;
+  width: 100%;
+  text-align: justify;
+  clear:both;
 }
 
-  .main-cards-section .main-section-title {
-    margin-left: 12px;
-    padding-bottom: 24px;
-  }
-
-.main-card-container {
+#narzedzia .card .card-content .card-image h5{
+  display: inline;
+  line-height: 2em;
+  padding: 4px;
+  font-size: 1.3em;
+  font-weight: 500;
+  margin:15px 35px 5px 0px;
+  float:right;
+}
+.narzedzia-wstep{
+  text-indent: 20px;
+  text-align: justify;
+  font-size: 18px;
 }
 
-  .main-card-container .mdl-card__media {
-    overflow: hidden;
-    background: transparent;
-  }
-
-    .main-card-container .mdl-card__media img {
-      width: 100%;
-      height: 220px;
-    }
-
-  .main-card-container .mdl-card__title {
-    background: transparent;
-    height: auto;
-  }
-
-  .main-card-container .mdl-card__title-text {
-    color: black;
-    height: auto;
-  }
-
-  .main-card-container .mdl-card__supporting-text {
-    height: auto;
-    color: black;
-    padding-bottom: 56px;
-  }
-
-  .main-card-container .mdl-card__actions {
-    position: absolute;
-    bottom: 0;
-  }
-
-  .main-card-container .mdl-card__actions a {
-    border-top: none;
-    font-size: 16px;
-  }
-
-.footer {
-  background-color: #83133F;
-  position: relative;
+.name{
+  font-size: 2.5em;
 }
-
-  .footer a:hover {
-    color: #8bc34a;
-  }
-.designer {
-  font-size:0.7em;
+.widget{
+  width:30px;
+  height:30px;
 }
-  .footer .mdl-mega-footer--top-section::after {
-    border-bottom: none;
-  }
-
-  .footer .mdl-mega-footer--middle-section::after {
-    border-bottom: none;
-  }
-
-  .footer .mdl-mega-footer--bottom-section {
-    position: relative;
-  }
-
-  .footer .mdl-mega-footer--bottom-section a {
-    margin-right: 2em;
-  }
-
-  .footer .mdl-mega-footer--right-section a .material-icons {
-    position: relative;
-    top: 6px;
-  }
-
-.main-link-menu:hover {
-  cursor: pointer;
+.widgetgl{
+  width:120px;
+  height:30px;
 }
-
-
-/**** Mobile layout ****/
-@media (max-width: 900px) {
-  .main-navigation-container {
-    display: none;
-  }
-
-  .main-title {
-    display: none !important;
-  }
-
-  .main-mobile-title {
-    display: block !important;
-    position: absolute;
-    left: calc(50% - 70px);
-    top: 12px;
-    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
-     consecutive "+" operators in some cases. Therefore, we need to use both
-     here to cover all the bases. */
-  .android.main-search-box.is-focused ~ .main-mobile-title,
-  .main-search-box.is-focused + .main-navigation-container + .main-mobile-title {
-    opacity: 0;
-  }
-
-  .main-search-box.is-focused {
-    width: calc(100% - 48px);
-  }
-
-  .main-search-box .mdl-textfield__expandable-holder {
-    width: 100%;
-  }
-
-  .main-welcome-section {
-    height: 350px;
-  }
-
-  .main-slogan {
-    font-size: 26px;
-    text-shadow: 4px 4px #000 !important;
-    margin: 0 16px;
-    padding-top: 24px;
-  }
-
-  .main-sub-slogan {
-    font-size: 16px;
-    margin: 0 16px;
-    text-shadow: 4px 4px #000 !important;
-    padding-top: 8px;
-  }
-
-  .footer .mdl-mega-footer--bottom-section {
-    display: none;
-  }
+.footer-wiatrak{
+  width:100px;
+  height:100px;
 }

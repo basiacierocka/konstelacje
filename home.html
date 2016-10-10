@@ -6,468 +6,723 @@
     <meta name="keywords" content="Katarzyna Węgrzyn, ustawienia systemowe, hellinger">
     <title>Konstelacje dla biznesu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.min.css">
     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-    <script>
-      $( function() {
-      $( "#accordion" ).accordion();
-      $( "#tabs" ).tabs();
-      } );
-    </script>
+    <script type="text/javascript">$( document ).ready(function(){$('.carousel.carousel-slider').carousel({full_width: true});})</script>
+    <script>$( document ).ready(function(){ $(".button-collapse").sideNav();})</script>
+    <script>$(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : true // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+  });</script>
+ <script> $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });</script>
+    
   </head>
   <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <div class="main-header mdl-layout__header mdl-layout__header--waterfall">
-        <div class="mdl-layout__header-row">
-          <a href="index.html">
-            <span class="main-title mdl-layout-title">
-              <img class="logo-image" src="images/wiatrak.jpg">
-            </span>
-          </a>
-          <a class="main-company-name" href="home.html">
-            <span class="mdl-layout-title">
-              <b>Konstelacje</b> Polska
-            </span>
-          </a>
-          <!-- Add spacer, to align navigation to the right in desktop -->
-          <div class="main-header-spacer mdl-layout-spacer"></div>
-          <div class="main-search-box mdl-textfield mdl-js-textfield
-            mdl-textfield--expandable mdl-textfield--floating-label
-            mdl-textfield--align-right mdl-textfield--full-width"></div>
-          <!-- Navigation -->
-          <div class="main-navigation-container">
-               <nav class="main-navigation mdl-navigation">
-                 <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#oferta">Oferta</a>
-                 <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#metoda">Metoda</a>
-                 <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#misja">Misja</a>
-                 <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#narzedzia">Narzędzia</a>
-                 <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#faq">FAQ</a>
-                 <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#kontakt">Kontakt</a>
-               </nav>
-             </div>
-           </div>
-         </div>
+      <div class="header-container row">
+        <nav>
+          <div class="nav-wrapper pink accent-4 navbar-fixed">
+             <a href="home.html">
+              <span>
+                <b>Konstelacje</b> Polska
+              </span>
+            </a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+             <ul class="right hide-on-med-and-down">
+              <li><a href="#misja" class="active">Misja</a></li>
+              <li><a href="#metoda" class="active">Metoda</a></li>
+              <li><a href="#narzedzia" class="active">Narzędzia</a></li>
+              <li><a href="#oferta" class="active">Oferta</a></li>
+              <li><a href="#faq" class="active">FAQ</a></li>
+              <li><a href="#kontakt" class="active">Kontakt</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <a href="#"><img class= src="images/wiatrak.png"></a>
+              <li><a href="#misja" class="active">Misja</a></li>
+              <li><a href="#metoda" class="active">Metoda</a></li>
+              <li><a href="#narzedzia" class="active">Narzędzia</a></li>
+              <li><a href="#oferta" class="active">Oferta</a></li>
+              <li><a href="#faq" class="active">FAQ</a></li>
+              <li><a href="#kontakt" class="active">Kontakt</a></li>
+            </ul>
+          </div>
+        </nav>
+       </div>
+    <div class="main-content">
+      <div class="slogan">
+        <img class="logo-image" src="images/wiatrak.png"><br>
+        <h1>Odkryj<br><b>Konstelacje</b></h1>
+      </div>
+         
+          <div class="fixed-action-btn" style="bottom: 60px; right: 40px;">
+            <a class="btn-floating btn-large pink waves-effect waves-light accent-4">
+              <i class="large material-icons"><p class="warsztaty-demo"><b>WARSZTATY<br>DEMONSTRACYJNE<br>!</b></p></i>
+            </a>
+        </div> 
+      <video playsinline autoplay mute loop poster="images/business.jpg" id="bgvid">
+        <source src="film.mp4" type="video/mp4">
+      </video> 
+      </div>  
 
-         <div class="main-drawer mdl-layout__drawer">
-           <span class="mdl-layout-title">
-               <img class="drawer-logo-image" src="images/wiatrak.jpg">
-             </span>
-           </a>
-           <nav class="mdl-navigation">
-             <a class="mdl-navigation__link" href="#oferta">Oferta</a>
-             <a class="mdl-navigation__link" href="#metoda">Metoda</a>
-             <a class="mdl-navigation__link" href="#misja">Misja</a>
-             <a class="mdl-navigation__link" href="#narzedzia">Narzędzia</a>
-             <a class="mdl-navigation__link" href="#faq">FAQ</a>
-             <a class="mdl-navigation__link" href="#kontakt">Kontakt</a>
-               <div class="main-drawer-separator"></div>
-           </nav>
-         </div>
-
-         <div class="main-content mdl-layout__content">
-           <a name="top"></a>
-             <div class="main-welcome-section mdl-typography--text-center">
-               <div class="logo-font main-slogan">Odkryj konstelacje</div>
-               <div class="logo-font main-sub-slogan"></div>
-               <div class="video-contenair">
-                 <video playsinline autoplay mute loop poster="images/women.jpg" id="bgvid">
-                   <source src="film.mp4" type="video/mp4">
-                 </video>
-               </div>
-             </div>
-
-
-             <div class="main-cards-section" id="oferta">
-               <div class="main-section-title mdl-typography--display-1-color-contrast">Oferta</div>
-               <div class="main-card-container mdl-grid">
-                 <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-                   <div class="mdl-card__media">
-                     <img src="images/business.jpg">
-                   </div>
-                   <div class="mdl-card__title">
-                     <h4 class="mdl-card__title-text">BUSINESS CONSTELLATION</h4>
-                   </div>
-                   <div class="mdl-card__supporting-text">
-                     <span class="mdl-typography--font-light mdl-typography--subhead">Dla właścicieli firm, prezesów, dyrektorów i team leaderów.</span>
-                   </div>
-                   <div class="mdl-card__actions">
-                     <a class="main-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                     Więcej...
-                       <i class="material-icons">chevron_right</i>
-                     </a>
-                   </div>
-                 </div>
-
-                 <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-                   <div class="mdl-card__media">
-                     <img src="images/coaching.jpg">
-                   </div>
-                   <div class="mdl-card__title">
-                     <h4 class="mdl-card__title-text">COACHING CONSTELLATION</h4>
-                   </div>
-                   <div class="mdl-card__supporting-text">
-                     <span class="mdl-typography--font-light mdl-typography--subhead">Dla trenerów, coachów, konsultantów biznesu i psychologów.</span>
-                   </div>
-                   <div class="mdl-card__actions">
-                     <a class="main-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                       Więcej...
-                       <i class="material-icons">chevron_right</i>
-                     </a>
-                   </div>
-                 </div>
-
-                 <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-                   <div class="mdl-card__media">
-                     <img src="images/rodzina.jpg">
-                   </div>
-                   <div class="mdl-card__title">
-                     <h4 class="mdl-card__title-text">FAMILY<br>CONSTELLATION</h4>
-                   </div>
-                   <div class="mdl-card__supporting-text">
-                     <span class="mdl-typography--font-light mdl-typography--subhead">Dla rodzin i pasjonatów rozwoju osobistego.</span>
-                   </div>
-                   <div class="mdl-card__actions">
-                     <a class="main-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                     Więcej...
-                       <i class="material-icons">chevron_right</i>
-                     </a>
-                   </div>
-                 </div>
-               </div>
-             </div>
-
-          <div class="main-method-section" id="metoda">
-            <div class="main-method-section-text">
-              <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Metoda</div>
-                <p class="mdl-typography--font-light">
-                  <div id="tabs">
-                    <ul class="tabs-list">
-                      <li><a href="#tabs-1">CO?</a></li>
-                      <li><a href="#tabs-2">KTO?</a></li>
-                      <li><a href="#tabs-3">GDZIE?</a></li>
-                    </ul>
-                    <div class="tabs-text" id="tabs-1">
-                      <p>Konstelacje i myślenie systemowe to holistyczna  metoda w doradztwie i zarządzaniu
-                        oparta na fenomenie pola morfogenetycznego i systemowej nieświadomości.
-                      </p>
-                      <p>Konstelacje są innowacyjnym modelem pracy z właścicielem firmy, prezesem, team leaderem, zespołem czy rodziną,
-                        opartym o doświadczenie klienta i porządek systemowy.
-                      </p>
-                      <p>
-                        Porządek w systemie (rodzinie, związku, zespole, firmie, organizacji) to powodzenie, zdrowie, udany związek, dobra
-                        kondycja fizyczna i psychiczna, wyniki w pracy i poczucie spełnienia w różnych rolach rodzinnych i społecznych.
-                        Zaburzone mechanizmy porządku w systemie, często nieświadome, są odpowiedzialne za niepewność, urazy, blokady, wycofanie,
-                        choroby psychosomatyczne, problemy finansowe, konflikty i inne straty.
-                        Jak wszyscy są obecni w systemie (rodzinie, firmie, zespole) i każdy jest na swoim miejscu, wtedy czerpie siłę ze swojego miejsca,
-                        nie trzeba nikogo grać, nie trzeba  nikogo zastępować albo brać za nikogo odpowiedzialności ani nikt nie musi się poświęcać dla innych.
-                        Klasyczne metody zajmują się tym co JEST widoczne i deklarowane, patrz 10%. Oznacza to pracę na skutkach, leczenie objawów,
-                        głaskanie powierzchni. Ustawienia systemowe proponują poszukanie przyczyny i zwracają się ku temu, co NIE JEST widoczne,
-                        patrz 90%.
-                      </p>
-                      <p>
-                        Dotarcie do przyczyny możliwe jest za pomocą narzędzi systemowych min.: praca na reprezentantach (figurki),
-                        praca na skryptach, focusing, słowa mocy, mapa konstelacji. Dzięki tym narzędziom podczas warsztatu można zajrzeć
-                        problemowi w oczy i wyciągnąć go na powierzchnię, wtedy nie może on dłużej działać, szkodzić.
-                      </p>
-                    </div>
-                    <div class="tabs-text" id="tabs-2">
-                      <p>Autorem konstelacji  jest niemiecki psycholog Bert Hellinger, specjalizujący się w konstelacjach rodzinnych.
-                        Maria Senftleben-Gudrich i Richard Graf  z czasem poszerzyli  zastosowanie tej metody o możliwość prowadzenia ustawień
-                        w biznesie i organizacjach,ciekawym zjawiskiem, które obserwuje się przy ustawieniach, jest to, że pracownicy często
-                        w firmie szukają dla siebie i znajdują miejsce, które znają z systemu rodzinnego.  Jeśli ktoś, np. w rodzinie
-                        jest outsiderem, również w pracy zajmuje często takie miejsce. WIĘCEJ: http://www.hellinger.com
-                      </p>
-                    </div>
-                    <div class="tabs-text" id="tabs-3">
-                      <p>Metoda ta cieszy się popularnością w Europie Zachodniej, zwłaszcza w Niemczech i Holandii od kilkudziesięciu lat.
-                      Firmy oraz indywidualni klienci coraz częściej pytają o ustawienia, wprowadzenie tej metody do przedsiębiorstwa lub organizacji
-                      zależy również od tego, czy jest wola i odwaga, żeby wypróbować coś nowego i innowacyjnego. Specjaliści do spraw marketingu mogą
-                      dzięki ustawieniom (Business Constellation) sprawdzić na przykład akceptację nowego produktu, zanim wejdzie on na rynek.
-                      Zastosowanie tej metody przyczyniło się do sukcesu takich znanych marek, jak: IBM, Microsoft, Konica, Dresdner Bank, czy HP.
-                      Źródło: http://www.treco.pl/wiedza/artykuly-szczegoly/id/698/page/74/ustawienia-systemowe-w-biznesie-recepta-na-problemy-twojej-firmy
-                      </p>
-                  </div>
-                </div>
-              </p>
-            </div>
-            </div>
-            <div class="main-method-section" id="misja">
-              <div class="main-method-section-text">
-                <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Misja</div>
-                <div class="main-card-container mdl-grid">
-                  <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-                    <div class="mdl-card__media">
-                      <img src="images/misja.jpg">
-                    </div>
-                    <div class="mdl-card__title">
-                      <h4 class="mdl-card__title-text">Bąble nowego w morzu starego</h4>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                      <span class="mdl-typography--font-light mdl-typography--subhead">Rozpowszechnienie i rozwój konstelacji jako holistycznego narzędzia pracy z ludźmi w biznesie,
-szkoleniach i konsultingu.</span>
-                    </div>
-                    <div class="mdl-card__actions">
-                      <a class="main-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="http://www.wiedzaozyciu.eu/viewtopic.php?t=888">
-                      Więcej...
-                        <i class="material-icons">chevron_right</i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              </div>
-              <div class="main-method-section" id="narzedzia">
-                <div class="main-method-section-text">
-                  <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Narzędzia</div>
-                  <div class="main-card-container mdl-grid">
-                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-                      <div class="mdl-card__media">
-                        <img src="images/narzedzia_facylitacja.jpg">
-                      </div>
-                      <div class="mdl-card__title">
-                        <h4 class="mdl-card__title-text">Facylitacja</h4>
-                      </div>
-                      <div class="mdl-card__supporting-text">
-                        <span class="mdl-typography--font-light mdl-typography--subhead">Obserwacja (bez zamiaru). Po obserwacji, można omówić case sudy,  zanalizować gry i relacje.
-Figurki – http://www.constellationset.com/index.php
-Narzędzie pracy systemowej  pokazujące relacje w systemie (w rodzinie, zespole, firmie).</span>
-                      </div>
-
-                    </div>
-
-                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-                      <div class="mdl-card__media">
-                        <img src="images/narzedzia_reprezentanci.jpg">
-                      </div>
-                      <div class="mdl-card__title">
-                        <h4 class="mdl-card__title-text">Reprezentanci</h4>
-                      </div>
-                      <div class="mdl-card__supporting-text">
-                        <span class="mdl-typography--font-light mdl-typography--subhead">Obca osoba, reprezentująca klienta, która pokazuje nieuświadomioną „prawdę” z pola morfogenetycznego utworzonego podczas warsztatu – fenomen ustawień systemowych.</span>
-                      </div>
-
-                    </div>
-
-                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-                      <div class="mdl-card__media">
-                        <img src="images/narzedzia_skrypty.jpg">
-                      </div>
-                      <div class="mdl-card__title">
-                        <h4 class="mdl-card__title-text">Skrypty
-</h4>
-                      </div>
-                      <div class="mdl-card__supporting-text">
-                        <span class="mdl-typography--font-light mdl-typography--subhead">Scenariusze na życie realizowane z dzieciństwa. Metoda opisana przez Erica Berne'a.
-Pokazuje jaki "program" z dzieciństwa realizujemy w relacjach ( w rodzinie, zespole, firmie).
-</span>
-                      </div>
-
-                    </div>
-
-                    <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--6-col-phone mdl-card mdl-shadow--3dp">
-                      <div class="mdl-card__media">
-                        <img src="images/narzedzia_mapakonstelacji.jpg">
-                      </div>
-                      <div class="mdl-card__title">
-                        <h4 class="mdl-card__title-text">Mapa Konstelacji (ściana projekcyjna).</h4>
-                      </div>
-                      <div class="mdl-card__supporting-text">
-                        <span class="mdl-typography--font-light mdl-typography--subhead">Technika systemowa, pokazująca w pionie lub w poziomie relacje  względem siebie.
-Dzięki niej można zobaczyć czy jest chaos w systemie ( rodzinie, zespole, firmie), czy kogoś brakuje, czy jest porządek.
-</span>
-                      </div>
-
-                    </div>
-
-                    <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--6-col-phone mdl-card mdl-shadow--3dp">
-                      <div class="mdl-card__media">
-                        <img src="images/narzedzia_focusing.jpg">
-                      </div>
-                      <div class="mdl-card__title">
-                        <h4 class="mdl-card__title-text">Focusing</h4>
-                      </div>
-                      <div class="mdl-card__supporting-text">
-                        <span class="mdl-typography--font-light mdl-typography--subhead">Technika zogniskowania uwagi na wybranym aspekcie klienta i odkrycie istoty, sedna sprawy.
-</span>
-                      </div>
-
-                      </div>
-                    </div>
-                </div>
-                </div>
-              <div class="main-method-section" id="faq">
-                <div class="main-method-section-text">
-                  <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">FAQ</div>
-                    <p class="mdl-typography--font-light">
-                      <div id="accordion">
-                        <h3>1. Czym są ustawienia systemowe – konstelacje?</h3>
-                        <div>
-                          <p>
-                            To holistyczna technika oparta o doświadczenie klienta.
-                            Konstelacje zajmują się porządkowaniem systemów (rodziny, zespołu, firmy) celem jest współdziałanie
-                             i kooperacja (relacja win win).
-                          </p>
-                        </div>
-                        <h3>2. Co działa w konstelacjach?</h3>
-                        <div>
-                          <p>
-                            W konstelacjach działa ujawnienie niewidocznych, nieświadomych uwikłań i nieporządków.
-                             Ujawnienie ich odbiera im możliwość działania. To jak gra w otwarte karty (pokera). Po odkryciu kart,
-                             nie można już blefować.
-                        </div>
-                        <h3>3. Dlaczego konstelacji trzeba doświadczyć a nie o nich opowiadać?</h3>
-                        <div>
-                          <p>
-                            Opowiadanie, wyobrażanie sobie jest rzeczywistością wirtualną, abstrakcyjną.  To jak przeżywanie cudzych emocji
-                            oglądając film. Doświadczenie to realne spojrzenie komuś w oczy, nazwanie uczuć i emocji. To głęboki proces,
-                            o czym mogą się przekonać uczestnicy warsztatów, gdy głos więźnie w gardle, łzy same napływają do oczu lub ujawniają
-                            się inne, skrywane emocje. Tego nie można załatwić abstrakcyjnie.
-                          </p>
-                        </div>
-                        <h3>4. Czym to narzędzie wyróżnia się?</h3>
-                        <div>
-                          <p>
-                          Dziś rynek obiecuje i oferuje różne produkty, usługi doradcze i szkoleniowe. Czemu wierzyć, że to skuteczne narzędzie?
-                          Konstelacje są techniką projekcyjną, nie ma w nich procedur i analizy. Od razu pokazuje się nam główny problem.
-                          Jest techniką doświadczalną, nie ma potrzeby „wierzyć” (czyli opierać się na tym co ktoś mówi). Można tego
-                           doświadczyć osobiście na warsztatach demonstracyjnych i osobiście wypracować własne zdanie o tej metodzie.
-                        </div>
-                        <h3>5. Jak wyglądają warsztaty ustawień konstelacji w firmie, zespole, rodzinie?</h3>
-                        <div>
-                          <p>
-                            Klient deklaruje w jednym zdaniu czym chce zająć się na warsztacie zadając pytanie np.
-                            - co stoi mi na drodze do sukcesu i zarabiania pieniędzy?
-                            następnie ustawiający wybiera reprezentantów (osoby, <a href="http://www.constellationset.com">figurki playmobile sets</a>).
-                            Reprezentanci pokazują ciałem, miną, zachowaniem jakie są relacje między elementami systemu.
-                            Od razu widać które elementy współdziałają, mają więź, a które walczą ze sobą, nienawidzą się i wykluczają.
-                          </p>
-                        </div>
-                        <h3>6. Co można sprawdzić metodą konstelacji?</h3>
-                        <div>
-                          <p>
-                            Chcę dowiedzieć się:
-                            - czy produkt będzie się sprzedawał?
-                            - czy jestem kwita ze swoimi klientami?
-                            - chcę dowiedzieć się co jest powodem rotacji pracowników w firmie?
-                            - czemu w organizacji szukam samodzielnych stanowisk?
-                            - co jest powodem, że zmieniam pracę, partnera?
-                            Każdy system składa się z iluś elementów.  Jak ręka mająca 5 palców. Wtedy system funkcjonuje sprawnie.
-                            Gdy któregoś palca brakuje lub palce rywalizują ze sobą, system (ręka) nie może funkcjonować sprawnie.
-                            Konstelacje usuwają przeszkody, powodując, że system jest sprawny, a elementy systemu dobrze się w nim czują.
-                            Konstelacje nie służą do przewidywania przyszłości, ale można zobaczyć, co stoi na przeszkodzie by osiągnąć cel.
-                          </p>
-                        </div>
-                        <h3>7. Na czym polega innowacyjność tego narzędzia?</h3>
-                        <div>
-                          <p>
-                      W metodach analitycznych zwykle w ogóle nie dochodzi się do sedna sprawy, gdyż analizuje się tylko to, co widać.
-                       W ogóle nie analizuje się tego czego nie wiemy. To myślenie dedukcyjne, nie widzi się całości obrazu.
-                      Konstelacje dają możliwość sprawdzenia przyczyny, co przeszkadza i co jest uwikłaniem by system ( rodzina, zespół, firma)
-                       mógł się rozwijać i działać.
-                          </p>
-                        </div>
-                      <h3>8. Kto może z tej metody korzystać?</h3>
-                      <div>
-                        <p>
-                    Korzystać może z niej każdy, zachowując zasady porządku, czyli ustawiać można siebie, swoje dzieci,
-                     pracowników. Dziecku nie wolno ustawiać rodziców, szefów, partnerów i innych obcych ludzi.
-                        </p>
-                      </div>
-                      <h3>9. Czy to cudowna metoda na wszystko? Samo się zrobi?</h3>
-                      <div>
-                        <p>
-                          Nic się samo nie zrobi. Konstelacje umożliwiają ujrzenie prawdziwego obrazu rzeczywistości
-                           oraz przepracowanie swojego  „problemu”. Daje wiedzę o „problemie” i pokazuje rozwiązanie go.
-                          Jest to fenomenem, ale nic magicznego w tym nie ma. Można tego doświadczyć i powtórzyć .
-                          Magiczne myślenie jest domeną dzieci. Życie jest dla dorosłych i toczy się poza warsztatami.
-                      </div>
-                      <h3>10. Co warsztaty zmienią w życiu klienta?</h3>
-                      <div>
-                        <p>
-                          Ustawienia dotyczą wszystkich elementów systemu ( osób)  także tych które na warsztatach nie były.
-                          Zmiany tak czy inaczej nastąpią, nawet wtedy, gdy klient „nie przyjmie” tego co zobaczył
-                           na ustawieniu. Wielu klientów chodzi na różne warsztaty tylko po to, by utwierdzić się w przekonaniu,
-                           że nic im nie może pomóc lub by znaleźć „magiczny” sposób by było tak, jak oni sobie życzą.
-                          Przypomina to kibica siedzącego na trybunie i wymądrzającego się na temat jak inni gracze
-                          na boisku mają grać i co mają robić.
-                          Dorosły człowiek ma siłę sam wejść na boisko i osobiście zagrać w grę o nazwie „życie”
-                        </p>
-                      </div>
-                      <h3>11. Czemu ta "metoda" oszczędza czas i pieniądze klientów?</h3>
-                      <div>
-                        <p>
-                      Metoda jest krótkoterminowa – zwykle wystarczy jeden warsztat na którym pokaże się główny problem.
-                      Po jego przepracowaniu, pozostałe problemy, jak kostki domina rozwiązują się same.
-                        </p>
-                      </div>
-                    </div>
-                  </p>
-                </div>
-              </div>
-
-            <div class="main-contact-section" id="kontakt">
-              <div class="main-contact-section-text">
-                <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Kontakt</div>
-                <div class="main-contact-section-image"></div>
-                <div class="mdl-typography--font-light contact-container content-grid mdl-grid">
-                  <div class="mdl-cell--5-col contact-cell">
-                    Constellation Polska<br>
-                    Katarzyna Węgrzyn<br>
-                    www.constellationpolska.com<br>
-                    T: +48 507 138 665<br>
-                    E-mail: welcome@constelationpolska.com<br>
-                    Adres siedziby: Gniewowska 8A/6, 84-240 Reda<br>
-                    REGON: 220947999<br>
-                    NIP: 764 237 09 20<br>
-                    Konto Firmowe: 68 1140 2017 0000 4702 1110 0734<br>
-                  </div>
-                  <div class="mdl-cell--1-col contact-cell"></div>
-                  <div class="mdl-cell--5-col contact-cell mdl-card mdl-shadow--3dp">
-                    <div class="main-contact-form">napisz do mnie:
-                      <form action="https://formspree.io/basiacierocka@gmail.com"
-                        method="POST">
-                        <input placeholder="Imię i nazwisko" type="text" name="name">
-                        <input placeholder="Twój email" type="email" name="_replyto">
-                        <input placeholder="Tytuł" type="text" name="title">
-                        <input placeholder="Wiadomość" type="text" name="message">
-                        <button type="submit" class="mdl-button">Wyślij</button>
-                      </form>
-                  </div>
+          <div id="misja" class=" z-depth-1 grey darken-2 gray-background">
+            <div class="container">
+            <div class="row"> 
+              <div class="col m12">
+                <h2>Misja</h2>
+            <h5>Rozpowszechnienie i rozwój konstelacji jako holistycznego narzędzia pracy z ludźmi w biznesie, 
+            szkoleniach i konsultingu.</h5>
               </div>
             </div>
+          </div>
+          </div>
+        <div class="container">
+          <div class="row">
+            <div class="col m12 s12">
+              <div>
+                <h5>Dobre praktyki</h5>
+                Warsztaty demonstracyjne, dzięki którym klient może doświadczyć metody konstelacji i sprawdzić czy produkt za jaki płaci jest tego wart.
+              </div>
+          </div>
+        </div>
+        </div>
 
-            <footer class="footer mdl-mega-footer" id="footer">
-              <div class="mdl-mega-footer--top-section">
-                <div class="mdl-mega-footer--left-section">
-                  <button class="mdl-mega-footer--social-btn"></button>
-                  &nbsp;
-                  <button class="mdl-mega-footer--social-btn"></button>
-                  &nbsp;
-                  <button class="mdl-mega-footer--social-btn"></button>
-                </div>
-                <div class="mdl-mega-footer--right-section">
-                  <a class="mdl-typography--font-light" href="#top">
-                    do góry
-                  </a>
-                </div>
+          <div class="z-depth-1 grey darken-2 gray-background">
+            <div class="container values">
+            <h5>Wartości</h5>
+            <div class="row">
+              <div class="col m2 s12">
+                <img src="images/1.jpg">
+                <p>Kooperacja</p>
               </div>
-              <div class="mdl-mega-footer--middle-section">
-                <p class="mdl-typography--font-light designer">by BC 2016</p>
+              <div class="col m2 s12">
+                <img src="images/2.jpg">
+                <p>Uznanie</p>
               </div>
-            </footer>
+              <div class="col m2 s12">
+                <img src="images/3.0.jpg">
+              </div>
+              <div class="col m2 s12">
+                <img src="images/3.1.jpg">
+                <p>Docenienie</p>
+                
+              </div>
+              <div class="col m2 s12">
+                <img src="images/3.2.jpg">
+              </div>
+              <div class="col m2 s12">
+                <img src="images/4.jpg">
+                <p>Wyrównanie –  relacje na lata</p>
+                
+            </div>                                                 
+          </div>
         </div>
       </div>
-    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+      <div class="metoda-container" id="metoda">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m3"><h2>Metoda</h2></div>
+          </div>
+          <div class="row">
+            <div class="col m12 s12">
+            <h5>Co?</h5>
+            <p>Konstelacje i myślenie systemowe to holistyczna  metoda w doradztwie i zarządzaniu oparta na fenomenie pola morfogenetycznego i systemowej nieświadomości.</p>
+           <p> To innowacyjny model pracy z właścicielem firmy, prezesem, team leaderem, zespołem czy rodziną, opartym o doświadczenie klienta i porządek systemowy.</p>
+            </div>
+
+            <h5>Kto?</h5>
+            <p>Autorem konstelacji  jest niemiecki psycholog Bert Hellinger, specjalizujący się w konstelacjach rodzinnych.  Maria Senftleben-Gudrich i Richard Graf  z czasem poszerzyli  zastosowanie tej metody o możliwość prowadzenia ustawień w biznesie i organizacjach,
+            ciekawym zjawiskiem, które obserwuje się przy ustawieniach, jest to, że pracownicy często w firmie szukają dla siebie i znajdują miejsce, które znają z systemu rodzinnego.  Jeśli ktoś, np. w rodzinie jest outsiderem, również w pracy zajmuje często takie miejsce. <a class="metoda-link" href="http://www.hellinger.com/">WIĘCEJ</a> </p>
+            
+            <div class="col m4 s12">
+            <h5>Gdzie?</h5>
+            <p>Metoda ta cieszy się popularnością w Europie Zachodniej, zwłaszcza w Niemczech i Holandii od kilkudziesięciu lat.
+            </p>
+            <p>
+            Firmy oraz indywidualni klienci coraz częściej pytają o ustawienia, wprowadzenie tej metody do przedsiębiorstwa lub organizacji zależy również od tego, czy jest wola i odwaga, żeby wypróbować coś nowego i innowacyjnego.
+            Specjaliści do spraw marketingu mogą dzięki ustawieniom (Business Constellation) sprawdzić na przykład akceptację nowego produktu, zanim wejdzie on na rynek.
+            Zastosowanie tej metody przyczyniło się do sukcesu takich znanych marek, jak: IBM, Microsoft, Konica, Dresdner Bank, czy HP. <a class="metoda-link" href="http://www.treco.pl/wiedza/artykuly-szczegoly/id/698/page/74/ustawienia-systemowe-w-biznesie-recepta-na-problemy-twojej-firmy">WIĘCEJ</a>
+          </p>
+            
+            </div>
+              <div class="col m8 s12">
+                <div class="carousel carousel-slider center" data-indicators="true">
+                  
+                  <div class="carousel-item pink darken-3 white-text" href="#one!">
+                    <h2>Porządek systemowy</h2>
+                    <p class="white-text">Wszystkie puzzle są, nikogo nie brakuję, nikt nie jest wykluczony i tylko jeden puzzel  ma jedno swoje miejsce tam gdzie pasuje, to przykład porządku  w systemie jakim jest rodzina, zespół i firma.</p>
+                    <div class="carousel-image-container"></div>
+                  </div>
+
+                  <div class="carousel-item blue lighten-1 white-text" href="#two!">
+                    <h2>Nieporządek systemowy – chaos</h2>
+                    <p class="white-text">Brak połączeń, więzi, brak relacji, to przykład chaosu jaki może występować w rodzinie, firmie i relacjach.</p>
+                    
+                  </div>
+
+                  <div class="carousel-item red white-text" href="#three!">
+                    <h2>Nieporządek systemowy - kogoś brakuje</h2>
+                    <p class="white-text">Brakuje jednego puzzla, jeśli ktoś został wykluczony, kogoś brakuje, odszedł lub sam się wykluczył, to w systemie ( rodzinie, zespole, firmie) jest nieporządek.</p>
+                  </div>
+
+                  <div class="carousel-item grey white-text" href="#four!">
+                    <h2>Nieporządek systemowy - ktoś zajmuje czyjeś miejsce</h2>
+                    <p class="white-text">Puzzle są zamienione, jeśli ktoś jest nie na swoim miejscu lub zajmuje miejsce komuś.</p>
+                    
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="narzedzia-container" id="narzedzia">
+        <div class="container">
+          <div class="row">
+            <div class="col m6 s12">
+              <h2>Narzędzia</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="narzedzia-wstep col s12 m4">
+              Metoda ustawień systemowych wykorzystuje następujące narzędzia. Dobierane są one wg potrzeby klienta przez specjalistęLOREM ipsum lorem ipsum lore ipsum lorem ipsum
+            </div>
+
+             <div class="col s12 m4">
+              <div class="card">
+                  <div class="card-content">
+                     <div class="card-image">
+                        <img src="images/narzedzia_facylitacja.jpg">
+                        <h5>Facylitacja</h5>
+                    </div> 
+                    <p>Obserwacja (bez zamiaru). Po obserwacji, można omówić case study, zanalizować gry i relacje.
+                            Figurki – http://www.constellationset.com/index.php
+                            Narzędzie pracy systemowej pokazujące relacje w systemie (w rodzinie, zespole, firmie).</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+              <div class="card">
+                  <div class="card-content">
+                     <div class="card-image">
+                        <img src="images/narzedzia_reprezentanci.jpg">
+                        <h5>Reprezentanci</h5>
+                    </div> 
+                    <p>Obca osoba, reprezentująca klienta, która pokazuje nieuświadomioną „prawdę” z pola
+                    morfogenetycznego utworzonego podczas warsztatu – fenomen ustawień systemowych.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m4">
+              <div class="card">
+                  <div class="card-content">
+                     <div class="card-image">
+                        <img src="images/narzedzia_skrypty.jpg">
+                        <h5>Skrypty</h5>
+                    </div> 
+                    <p>Scenariusze na życie realizowane z dzieciństwa. Metoda opisana przez Erica Berne&#39;a.
+                  Pokazuje jaki &quot;program&quot; z dzieciństwa realizujemy w relacjach ( w rodzinie, zespole, firmie).</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+              <div class="card">
+                  <div class="card-content">
+                     <div class="card-image">
+                        <img src="images/narzedzia_mapakonstelacji.jpg">
+                        <h5>Mapa konstelacji</h5>
+                    </div> 
+                    <p>Technika systemowa, pokazująca w pionie lub w poziomie relacje względem siebie.
+                    Dzięki niej można zobaczyć czy jest chaos w systemie ( rodzinie, zespole, firmie), czy kogoś brakuje,
+                    czy jest porządek.</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+              <div class="card">
+                  <div class="card-content">
+                     <div class="card-image">
+                        <img src="images/narzedzia_focusing.jpg">
+                        <h5>Focusing</h5>
+                    </div> 
+                    <p>Technika zogniskowania uwagi na wybranym aspekcie klienta i odkrycie istoty, sedna sprawy.</p>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+          </div>
+        </div>
+
+       <div class="oferta-container" id="oferta">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m12"><h2 class="">Oferta</h2></div>
+          </div>
+         <div class="row">
+              <div class="col s12 m4">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/business.jpg">
+                    
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">BUSINESS CONSTELLATION</span>
+                    <p>Dla właścicieli firm, prezesów, dyrektorów i team leaderów.</p>
+                  </div>
+                  <div class="card-action">
+                    <a class="waves-effect waves-light btn grey darken-2 modal-trigger" href="#modalinfobc">></a>
+                    <a class="waves-effect waves-light btn grey darken-2 modal-trigger" href="#modalbc">Zapisz się</a>
+                  </div>
+                </div>
+              </div>
+
+                <div id="modalbc" class="modal">
+                    <div class="modal-content">
+                      <h4>Formularz kontaktowy</h4>
+                      <div class="row">
+                        <form class="col s12" action="https://formspree.io/basiacierocka@gmail.com"
+                    method="POST">
+                          <div class="row">
+                            <div class="input-field col s3">
+                              <input id="first_name" type="text" name="name" class="validate">
+                              <label for="first_name">Imię</label>
+                            </div>
+                            <div class="input-field col s3">
+                              <input id="last_name" type="text" class="validate">
+                              <label for="last_name">Nazwisko</label>
+                            </div>
+                            <div class="input-field col s6">
+                              <input id="firma" type="text" class="validate">
+                              <label for="firma">Firma</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s6">
+                              <input id="email" type="email" name="_replyto" class="validate">
+                              <label for="email"> Twój Email</label>
+                            </div>
+                             <div class="input-field col s6">
+                              <input id="title" type="text" name="title" value="Business Constellation" class="validate">
+                              <label for="title">Tytuł</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <textarea id="textarea1" name="message" class="materialize-textarea"></textarea>
+                              <label for="textarea1">Twoja wiadomość</label>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="row">
+                        <div class="col s12">
+                           <p>
+                            <input type="checkbox" id="zgoda1" />
+                            <label for="zgoda1">Wyrażam zgodę na przetwarzanie powyższych danych osobowych przez Develop Consulting
+                        właściciela marki Konstelacje Polska w celu realizacji warsztatu zgodnie z ustawą z dnia 29 sierpnia
+                        1997 r. o ochronie danych osobowych.</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="zgoda2" />
+                            <label for="zgoda2">Wyrażam zgodę na przetwarzanie powyższych danych osobowych przez Develop Consulting
+                        właściciela marki Konstelacje Polska w celach marketingowych i handlowych zgodnie z ustawą z dnia
+                        29 sierpnia 1997 r. o ochronie danych osobowych oraz ustawą z dnia 18 lipca 2002 r. o świadczeniu
+                        usług drogą elektroniczną.</label>
+                          </p>
+                      </div>
+                    </div>
+        
+                    </div>
+                    <div class="modal-footer">
+                      
+                      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Send</a>
+                    </div>
+                  </div>
+
+              <div class="col s12 m4">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/coaching.jpg">
+                  </div>
+                  <div class="card-content">
+
+                    <span class="card-title">COACHING CONSTELLATION</span>
+                    <p>Dla trenerów, coachów, konsultantów biznesu i psychologów.</p>
+                  </div>
+                  <div class="card-action">
+                     <a class="waves-effect waves-light grey darken-2 btn modal-trigger" href="#modalinfocc">></a>
+                    <a class="waves-effect waves-light grey darken-2 btn modal-trigger" href="#modalcc">Zapisz się</a>
+                  </div>
+                </div>
+              </div>
+
+                <div id="modalcc" class="modal">
+                    <div class="modal-content">
+                      <h4>Formularz kontaktowy</h4>
+                      <div class="row">
+                        <form class="col s12" action="https://formspree.io/basiacierocka@gmail.com"
+                    method="POST">
+                          <div class="row">
+                            <div class="input-field col s6">
+                              <input id="first_name" type="text" name="name" class="validate">
+                              <label for="first_name">Imię</label>
+                            </div>
+                            <div class="input-field col s6">
+                              <input id="last_name" type="text" class="validate">
+                              <label for="last_name">Nazwisko</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s6">
+                              <input id="email" type="email" name="_replyto" class="validate">
+                              <label for="email"> Twój Email</label>
+                            </div>
+                             <div class="input-field col s6">
+                              <input id="title" type="text" name="title" value="Coaching Constellation" class="validate">
+                              <label for="title">Tytuł</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <textarea id="textarea1" name="message" class="materialize-textarea"></textarea>
+                              <label for="textarea1">Twoja wiadomość</label>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="row">
+                        <div class="col s12">
+                           <p>
+                            <input type="checkbox" id="zgoda1" />
+                            <label for="zgoda1">Wyrażam zgodę na przetwarzanie powyższych danych osobowych przez Develop Consulting
+                        właściciela marki Konstelacje Polska w celu realizacji warsztatu zgodnie z ustawą z dnia 29 sierpnia
+                        1997 r. o ochronie danych osobowych.</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="zgoda2" />
+                            <label for="zgoda2">Wyrażam zgodę na przetwarzanie powyższych danych osobowych przez Develop Consulting
+                        właściciela marki Konstelacje Polska w celach marketingowych i handlowych zgodnie z ustawą z dnia
+                        29 sierpnia 1997 r. o ochronie danych osobowych oraz ustawą z dnia 18 lipca 2002 r. o świadczeniu
+                        usług drogą elektroniczną.</label>
+                          </p>
+                      </div>
+                    </div>
+        
+                    </div>
+                    <div class="modal-footer">
+                      
+                      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Send</a>
+                    </div>
+                  </div>
+
+              <div class="col s12 m4">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/rodzina.jpg">
+                  </div>
+                  <div class="card-content">
+
+                    <span class="card-title">FAMILY <br>CONSTELLATION</span>
+                    <p>Dla rodzin i pasjonatów rozwoju osobistego.</p>
+                  </div>
+                  <div class="card-action">
+                     <a class="waves-effect waves-light grey darken-2 btn modal-trigger" href="#modalinfofc">></a>
+                    <a class="waves-effect waves-light grey darken-2 btn modal-trigger" href="#modalfc">Zapisz się</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <div id="modalfc" class="modal">
+                    <div class="modal-content">
+                      <h4>Formularz kontaktowy</h4>
+                      <div class="row">
+                        <form class="col s12" action="https://formspree.io/basiacierocka@gmail.com"
+                    method="POST">
+                          <div class="row">
+                            <div class="input-field col s6">
+                              <input id="first_name" type="text" name="name" class="validate">
+                              <label for="first_name">Imię</label>
+                            </div>
+                            <div class="input-field col s6">
+                              <input id="last_name" type="text" class="validate">
+                              <label for="last_name">Nazwisko</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s6">
+                              <input id="email" type="email" name="_replyto" class="validate">
+                              <label for="email"> Twój Email</label>
+                            </div>
+                             <div class="input-field col s6">
+                              <input id="title" type="text" value="Family Constellation" name="title" class="validate">
+                              <label for="title">Tytuł</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <textarea id="textarea1" name="message" class="materialize-textarea"></textarea>
+                              <label for="textarea1">Twoja wiadomość</label>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="row">
+                        <div class="col s12">
+                           <p>
+                            <input type="checkbox" id="zgoda1" />
+                            <label for="zgoda1">Wyrażam zgodę na przetwarzanie powyższych danych osobowych przez Develop Consulting
+                        właściciela marki Konstelacje Polska w celu realizacji warsztatu zgodnie z ustawą z dnia 29 sierpnia
+                        1997 r. o ochronie danych osobowych.</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="zgoda2" />
+                            <label for="zgoda2">Wyrażam zgodę na przetwarzanie powyższych danych osobowych przez Develop Consulting
+                        właściciela marki Konstelacje Polska w celach marketingowych i handlowych zgodnie z ustawą z dnia
+                        29 sierpnia 1997 r. o ochronie danych osobowych oraz ustawą z dnia 18 lipca 2002 r. o świadczeniu
+                        usług drogą elektroniczną.</label>
+                          </p>
+                      </div>
+                    </div>
+        
+                    </div>
+                    <div class="modal-footer">
+                      
+                      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Send</a>
+                    </div>
+                  </div>
+
+            </div>
+          </div> 
+        
+
+            <div class="faq-container" id="faq">
+              <div class="container">
+                <div class="row">
+                  <div class="col m6 s12">
+                    <h2>FAQ</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <ul class="collapsible" data-collapsible="accordion">
+                      <li>
+                        <div class="collapsible-header">1. Czym są ustawienia systemowe – konstelacje?</div>
+                        <div class="collapsible-body"><p>To holistyczna technika oparta o doświadczenie klienta.
+                        Konstelacje zajmują się porządkowaniem systemów (rodziny, zespołu, firmy) celem jest współdziałanie
+                         i kooperacja (relacja win win).</p></div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header">2. Co działa w konstelacjach?</div>
+                        <div class="collapsible-body"><p>W konstelacjach działa ujawnienie niewidocznych, nieświadomych uwikłań i nieporządków.
+                         Ujawnienie ich odbiera im możliwość działania. To jak gra w otwarte karty (pokera). Po odkryciu kart,
+                         nie można już blefować.</p></div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header">3. Dlaczego konstelacji trzeba doświadczyć a nie o nich opowiadać?</div>
+                        <div class="collapsible-body"><p>  Opowiadanie, wyobrażanie sobie jest rzeczywistością wirtualną, abstrakcyjną.  To jak przeżywanie cudzych emocji
+                        oglądając film. Doświadczenie to realne spojrzenie komuś w oczy, nazwanie uczuć i emocji. To głęboki proces,
+                        o czym mogą się przekonać uczestnicy warsztatów, gdy głos więźnie w gardle, łzy same napływają do oczu lub ujawniają
+                        się inne, skrywane emocje. Tego nie można załatwić abstrakcyjnie.</p></div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header">4. Czym to narzędzie wyróżnia się?</div>
+                        <div class="collapsible-body"><p>  Dziś rynek obiecuje i oferuje różne produkty, usługi doradcze i szkoleniowe. Czemu wierzyć, że to skuteczne narzędzie?
+                      Konstelacje są techniką projekcyjną, nie ma w nich procedur i analizy. Od razu pokazuje się nam główny problem.
+                      Jest techniką doświadczalną, nie ma potrzeby „wierzyć” (czyli opierać się na tym co ktoś mówi). Można tego
+                       doświadczyć osobiście na warsztatach demonstracyjnych i osobiście wypracować własne zdanie o tej metodzie..</p></div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header">5. Jak wyglądają warsztaty ustawień konstelacji w firmie, zespole, rodzinie?</div>
+                        <div class="collapsible-body"><p>Klient deklaruje w jednym zdaniu czym chce zająć się na warsztacie zadając pytanie np.
+                        - co stoi mi na drodze do sukcesu i zarabiania pieniędzy?
+                        następnie ustawiający wybiera reprezentantów (osoby, <a href="http://www.constellationset.com">figurki playmobile sets</a>).
+                        Reprezentanci pokazują ciałem, miną, zachowaniem jakie są relacje między elementami systemu.
+                        Od razu widać które elementy współdziałają, mają więź, a które walczą ze sobą, nienawidzą się i wykluczają.</p></div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header">Co można sprawdzić metodą konstelacji?</div>
+                        <div class="collapsible-body"><p>  Chcę dowiedzieć się:
+                        - czy produkt będzie się sprzedawał?
+                        - czy jestem kwita ze swoimi klientami?
+                        - chcę dowiedzieć się co jest powodem rotacji pracowników w firmie?
+                        - czemu w organizacji szukam samodzielnych stanowisk?
+                        - co jest powodem, że zmieniam pracę, partnera?
+                        Każdy system składa się z iluś elementów.  Jak ręka mająca 5 palców. Wtedy system funkcjonuje sprawnie.
+                        Gdy któregoś palca brakuje lub palce rywalizują ze sobą, system (ręka) nie może funkcjonować sprawnie.
+                        Konstelacje usuwają przeszkody, powodując, że system jest sprawny, a elementy systemu dobrze się w nim czują.
+                        Konstelacje nie służą do przewidywania przyszłości, ale można zobaczyć, co stoi na przeszkodzie by osiągnąć cel.</p></div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header">7. Na czym polega innowacyjność tego narzędzia?</div>
+                        <div class="collapsible-body"><p>W metodach analitycznych zwykle w ogóle nie dochodzi się do sedna sprawy, gdyż analizuje się tylko to, co widać.
+                   W ogóle nie analizuje się tego czego nie wiemy. To myślenie dedukcyjne, nie widzi się całości obrazu.
+                  Konstelacje dają możliwość sprawdzenia przyczyny, co przeszkadza i co jest uwikłaniem by system ( rodzina, zespół, firma)
+                   mógł się rozwijać i działać.</p></div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header">8. Kto może z tej metody korzystać?</div>
+                        <div class="collapsible-body"><p>Korzystać może z niej każdy, zachowując zasady porządku, czyli ustawiać można siebie, swoje dzieci,
+                 pracowników. Dziecku nie wolno ustawiać rodziców, szefów, partnerów i innych obcych ludzi.</p></div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header">9. Czy to cudowna metoda na wszystko? Samo się zrobi?</div>
+                        <div class="collapsible-body"><p>Nic się samo nie zrobi. Konstelacje umożliwiają ujrzenie prawdziwego obrazu rzeczywistości
+                       oraz przepracowanie swojego  „problemu”. Daje wiedzę o „problemie” i pokazuje rozwiązanie go.
+                      Jest to fenomenem, ale nic magicznego w tym nie ma. Można tego doświadczyć i powtórzyć .
+                      Magiczne myślenie jest domeną dzieci. Życie jest dla dorosłych i toczy się poza warsztatami.</p></div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header">10. Co warsztaty zmienią w życiu klienta?</div>
+                        <div class="collapsible-body"><p>Ustawienia dotyczą wszystkich elementów systemu ( osób)  także tych które na warsztatach nie były.
+                      Zmiany tak czy inaczej nastąpią, nawet wtedy, gdy klient „nie przyjmie” tego co zobaczył
+                       na ustawieniu. Wielu klientów chodzi na różne warsztaty tylko po to, by utwierdzić się w przekonaniu,
+                       że nic im nie może pomóc lub by znaleźć „magiczny” sposób by było tak, jak oni sobie życzą.
+                      Przypomina to kibica siedzącego na trybunie i wymądrzającego się na temat jak inni gracze
+                      na boisku mają grać i co mają robić.
+                      Dorosły człowiek ma siłę sam wejść na boisko i osobiście zagrać w grę o nazwie „życie”</p></div>
+                      </li>
+                         <li>
+                        <div class="collapsible-header">11. Czemu ta "metoda" oszczędza czas i pieniądze klientów?</div>
+                        <div class="collapsible-body"><p>Metoda jest krótkoterminowa – zwykle wystarczy jeden warsztat na którym pokaże się główny problem.
+                  Po jego przepracowaniu, pozostałe problemy, jak kostki domina rozwiązują się same.</p></div>
+                      </li>
+
+                    </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+            <div class="kontakt-container" id="kontakt">
+              <div class="container">
+                <div class="row">
+                  <div class="col m6 s12">
+                    <h2>Kontakt</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col m6 s12">
+                    <p class="name">Katarzyna Węgrzyn</p>
+                    <p><i class="material-icons">phone</i> 507 138 665</p>
+                    <p><i class="material-icons">my_location</i> ul. Gniewowska 8A/6 84-240 Reda</p>
+                    <p><i class="material-icons">email</i> biuro@konstelacjepolska.com</p>
+                    <p>NIP 764-237-09-20</p>
+                    <p>REGON 220947999</p>
+                    <p>Nr konta MBank 68 1140 2017 0000 4702 1110  0734</p>
+                  </div>
+                  <div class="col m6 s12">
+
+                  <!-- Modal Trigger -->
+                  <a class="waves-effect waves-light btn grey darken-2 modal-trigger" href="#modal1">NAPISZ DO MNIE</a>
+
+                  <!-- Modal Structure -->
+                  <div id="modal1" class="modal">
+                    <div class="modal-content">
+                      <h4>Formularz kontaktowy</h4>
+                      <div class="row">
+                        <form class="col s12" action="https://formspree.io/basiacierocka@gmail.com"
+                    method="POST">
+                          <div class="row">
+                            <div class="input-field col s6">
+                              <input id="first_name" type="text" name="name" class="validate">
+                              <label for="first_name">Imię</label>
+                            </div>
+                            <div class="input-field col s6">
+                              <input id="last_name" type="text" class="validate">
+                              <label for="last_name">Nazwisko</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s6">
+                              <input id="email" type="email" name="_replyto" class="validate">
+                              <label for="email"> Twój Email</label>
+                            </div>
+                             <div class="input-field col s6">
+                              <input id="title" type="text" name="title" class="validate">
+                              <label for="title">Tytuł</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <textarea id="textarea1" name="message" class="materialize-textarea"></textarea>
+                              <label for="textarea1">Twoja wiadomość</label>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="row">
+                        <div class="col s12">
+                           <p>
+                            <input type="checkbox" id="zgoda1" />
+                            <label for="zgoda1">Wyrażam zgodę na przetwarzanie powyższych danych osobowych przez Develop Consulting
+                        właściciela marki Konstelacje Polska w celu realizacji warsztatu zgodnie z ustawą z dnia 29 sierpnia
+                        1997 r. o ochronie danych osobowych.</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="zgoda2" />
+                            <label for="zgoda2">Wyrażam zgodę na przetwarzanie powyższych danych osobowych przez Develop Consulting
+                        właściciela marki Konstelacje Polska w celach marketingowych i handlowych zgodnie z ustawą z dnia
+                        29 sierpnia 1997 r. o ochronie danych osobowych oraz ustawą z dnia 18 lipca 2002 r. o świadczeniu
+                        usług drogą elektroniczną.</label>
+                          </p>
+                      </div>
+                    </div>
+        
+                    </div>
+                    <div class="modal-footer">
+                      
+                      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Send</a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            </div>
+          </div>
+        </div>
+      <footer class="page-footer  pink accent-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l2 s6">
+            <a href="#"><img class="footer-wiatrak" src="images/wiatrak.png"></a>
+          </div>
+          <div class="col l2 s6">
+            <h5 class="white-text">Konstelacje Polska</h5>
+            <p class="grey-text text-lighten-4">Develope consulting</p>
+          </div>
+          <div class="col l6 offset-l2 s12">
+            <h5 class="white-text"></h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="https://pl.linkedin.com/in/wegrzynkatarzyna"><img class="widget" src="https://lh3.googleusercontent.com/00APBMVQh3yraN704gKCeM63KzeQ-zHUi5wK6E9TjRQ26McyqYBt-zy__4i8GXDAfeys=w300" </a></li>
+              <li><a class="grey-text text-lighten-3" href="http://www.goldenline.pl/katarzyna-wegrzyn/"><img class="widgetgl" src="http://static.wirtualnemedia.pl/media/top/goldenline-logo.jpg" </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2016 BC
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
     <script>
     $( window ).load(function() { $( '#bgvid' ).get(0).play();});
- </script>
- <script>
- $( window ).load(function() { $( '#sound' ).get(0).play();});
-</script>
-    </body>
+    </script>
+  </body>
 </html>
