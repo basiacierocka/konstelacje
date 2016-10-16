@@ -75,7 +75,7 @@ font-family: Roboto;
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url(images/business.jpg) no-repeat;
+  background-color: #fff;
   background-size: cover;
 }
 
@@ -94,27 +94,25 @@ font-family: Roboto;
   width:95px;
   height:95px;
   border-radius: 50%;
+  margin:4px;
+ 
+}
+.img-in-dashed{
+   display:block;
+   text-align: center;
 }
 
 .values p{
   text-align:center;
-
-}
-.border-values img{
-  margin:5px;
 }
 
 .border-values{
   border: dashed 3px!important;
   margin: 2%;
   padding: 10px!important;
-  content: center; 
+  height:200px;
 }
 
-.border-values-2 img{
-  margin-left: 20px;
-
-}
 
 .praktyki-container, .misja-container p {
   line-height: 1.7em;
