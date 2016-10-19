@@ -10,13 +10,16 @@ a img{
   color: #fff;
 }
 
-.header-container span{
-font-size: 1.7em !important;
+.header-container span .second-word{
+font-size: 3em !important;
 color:#e57373;
-margin-left: 15px;
+font-weight: 300;
 }
 .header-container span b{
+  font-size:3em;
   color:#fff;
+
+margin-left: 15px;
 }
 
 .slogan {
@@ -27,6 +30,11 @@ margin-left: 15px;
   top: 200px;
   text-align: center;
   line-height: 30px;
+}
+.slogan .first-word{
+  font-size: 1.2em !important;
+color:#fff;
+font-weight: 300;
 }
 
 .logo-image{
@@ -44,7 +52,7 @@ color:#ffffff;
 .warsztaty-demo{
   padding:5px;
 font-size: 16px;
-line-height: 2.3em;
+line-height: 2.7em;
 font-family: Roboto;
 }
 
@@ -79,7 +87,7 @@ font-family: Roboto;
   background-size: cover;
 }
 
-.oferta-container, .faq-container, .kontakt-container, .metoda-container, .misja-container, .narzedzia-container{
+.oferta-container, .faq-container, .kontakt-container, .metoda-container, .misja-container, .narzedzia-container, .omnie-container, .zespol-container{
   padding-top: 60px;
 }
 
@@ -88,6 +96,11 @@ font-family: Roboto;
   margin: 30px 0px;
   padding: 30px 20px;
   color:#fff;
+}
+.white-background{
+  background-color: #fff;
+  margin: 30px 0px;
+  padding: 30px 20px;
 }
 
 .gray-background img{
@@ -129,8 +142,8 @@ font-family: Roboto;
 }
 
 .carousel-image-container-all{
-  height:140px !important;
-  width:200px;
+  height:200px !important;
+  width:300px;
   margin:0 auto;
   background-image: url("images/all.jpg");
 
@@ -169,15 +182,15 @@ font-family: Roboto;
 }
 
 .metoda-link {
-  color: #757575;
+  color: red;
 }
 .metoda-link:hover {
-  color: red;
+  color: #757575;
 }
 
 .carousel-item p{
-  margin: 20px 40px 20px 40px;
-  font-size: 1.2em !important;
+  margin: 3% 7% 3% 7%;
+  font-size: 1.1em !important;
 }
 
 #narzedzia .card{
@@ -234,6 +247,10 @@ font-family: Roboto;
 }
 .name{
   font-size: 2.5em;
+}
+.kasia-img{
+  width:90%;
+  height:90%;
 }
 .widget{
   width:30px;
