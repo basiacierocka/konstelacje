@@ -22,6 +22,15 @@ font-weight: 300;
 margin-left: 15px;
 }
 
+#sidenav-overlay{
+  z-index:7!important;
+}
+.side-nav .sidenav_wiatrak{
+  margin:5px;
+width:40px;
+height:40px;
+}
+
 .slogan {
   background-color: rgba(200, 100, 100, 0.5);
   padding: 20px 0px;
@@ -88,7 +97,7 @@ font-family: Roboto;
 }
 
 .oferta-container, .faq-container, .kontakt-container, .metoda-container, .misja-container, .narzedzia-container, .omnie-container, .zespol-container{
-  padding-top: 60px;
+  padding-top: 45px;
 }
 
 .gray-background{
@@ -100,21 +109,19 @@ font-family: Roboto;
 .white-background{
   background-color: #fff;
   margin: 30px 0px;
-  padding: 30px 20px;
+  padding: 0px 20px;
 }
 
 .gray-background img{
-  width:95px;
-  height:95px;
+  width:180px;
+  height:180px;
   border-radius: 50%;
-  margin:4px;
  
 }
 .img-in-dashed{
    display:block;
    text-align: center;
 }
-
 .values p{
   text-align:center;
 }
@@ -204,12 +211,12 @@ font-family: Roboto;
 }
 
 #narzedzia .card .card-image img{
-  height: 20%;
-  width: 20%;
+  height: 21%;
+  width: 21%;
   border-radius: 50%;
   margin: 1%;
   display: inline;
-  float:left;
+  float:right;
 }
 
 #narzedzia .card .card-content p{
@@ -223,10 +230,13 @@ font-family: Roboto;
   display: inline;
   line-height: 2em;
   padding: 4px;
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-weight: 500;
-  margin:10px 50px 1px 0px;
-  float:right;
+  margin:10px 0px 1px 0px;
+  float:left;
+}
+#narzedzia .card .card-content .card-image .mapa_konstelacji{
+  font-size: 1.3em;
 }
 
 .narzedzia-wstep{
@@ -248,35 +258,47 @@ font-family: Roboto;
 .name{
   font-size: 2.5em;
 }
+.zespol-container div{
+text-align: justify;
+}
+
 .kasia-img{
   width:90%;
   height:90%;
+  opacity: ;
 }
+table.centered tbody .firma td{
+  font-weight:bold;
+  padding: 0px !important;
+}
+tbody .task td{
+  font-size: 0.7em;
+  padding: 2px!important;
+  margin:0px;
+}
+
 .widget{
   width:30px;
   height:30px;
+  margin:8px 4px;
+  opacity:0.7;
 }
-.widgetgl{
-  width:120px;
-  height:30px;
-}
+
 .footer-wiatrak{
   width:85px;
   height:85px;
 }
 
+
 @media screen and (max-width: 1090px) and (min-width: 900px) {
     .morebutton{
       width: 10px!important;
     }
-
-@media screen and (max-width: 740px) and (min-width: 600px) {
-    #narzedzia .card {
-        height:240px;
-    }
-
-    #narzedzia .card .card-content .card-image h5{
-      margin:10px 20px 1px 0px;
-      font-size: 1.2em
+}
+@media screen and (max-width: 1107px) and (min-width: 993px) {
+    #narzedzia .card .card-content .card-image h5, #narzedzia .card .card-content .card-image .mapa_konstelacji{
+      margin:0px 0px 1px 0px;
+      font-size: 0.95em
     }
 }
+
