@@ -113,26 +113,16 @@ font-family: Roboto;
 }
 
 .gray-background img{
-  width:180px;
-  height:180px;
-  border-radius: 50%;
- 
+  width:160px;
+  height:160px;
+  border-radius: 50%; 
+  position:relative;
+  text-align: center;
 }
-.img-in-dashed{
-   display:block;
-   text-align: center;
-}
+
 .values p{
-  text-align:center;
+  text-align: center;
 }
-
-.border-values{
-  border: dashed 3px!important;
-  margin: 2%;
-  padding: 10px!important;
-  height:200px;
-}
-
 
 .praktyki-container, .misja-container p {
   line-height: 1.7em;
@@ -149,10 +139,10 @@ font-family: Roboto;
 }
 
 .carousel-image-container-all{
-  height:200px !important;
-  width:300px;
+  height:180px !important;
+  width:340px;
   margin:0 auto;
-  background-image: url("images/all.jpg");
+  background-image: url("images/all.png");
 
 }
 
@@ -160,14 +150,14 @@ font-family: Roboto;
   height:140px !important;
   width:200px;
   margin:0 auto;
-  background-image: url("images/moved.jpg");
+  background-image: url("images/moved.png");
 }
 
 .carousel-image-container-lack{
-  height:140px !important;
-  width:200px;
+  height:180px !important;
+  width:340px;
   margin:0 auto;
-  background-image: url("images/lack.jpg");
+  background-image: url("images/lack.png") no-repeat;
 }
 .carousel-image-container-chaos{
   height:140px !important;
@@ -261,11 +251,14 @@ font-family: Roboto;
 .zespol-container div{
 text-align: justify;
 }
-
+.cytat{
+  font-size: 3em;
+  font-weight: 200;
+  font-family: 'Catamaran', sans-serif;
+}
 .kasia-img{
-  width:90%;
-  height:90%;
-  opacity: ;
+  width:70%;
+  height:70%;
 }
 table.centered tbody .firma td{
   font-weight:bold;
@@ -285,10 +278,22 @@ tbody .task td{
 }
 
 .footer-wiatrak{
-  width:85px;
-  height:85px;
+  width:70px;
+  height:70px;
 }
 
+.footer-name, .footer-name1{
+font-weight: 300; 
+font-size: 1.3em;
+}
+.footer-name1{
+  font-weight: 400;
+}
+
+.footer-data{
+  font-weight: 200;
+  font-size: 0.9em;
+}
 
 @media screen and (max-width: 1090px) and (min-width: 900px) {
     .morebutton{
@@ -302,3 +307,8 @@ tbody .task td{
     }
 }
 
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+    .gray-background img{
+      width: 50%;
+    }
+}
