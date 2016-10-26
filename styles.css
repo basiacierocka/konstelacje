@@ -375,7 +375,7 @@ tbody .task td {
 .footer-wiatrak {
   width: 70px;
   height: 70px;
-}
+} 
 
 .footer-name,
 .footer-name1 {
@@ -393,6 +393,16 @@ tbody .task td {
 }
 .footer-copyright a{
   margin: 3px;
+}
+
+.values p {
+  text-align: center;
+}
+
+.values img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 1090px) and (min-width: 900px) {
