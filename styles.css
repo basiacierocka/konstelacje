@@ -345,6 +345,14 @@ font-size: 1.2em;
   transform: translate3d(0,0,0);
 }
 
+.pasekonkasia h4{
+  margin-top: 0!important;
+  margin-bottom: 0!important;
+}
+.pasekonkasia{
+   padding-top: 0!important;
+  padding-bottom: 0!important;
+}
 
 table.centered tbody .firma td {
   font-weight: bold;
@@ -382,6 +390,9 @@ tbody .task td {
 .footer-data {
   font-weight: 200;
   font-size: 0.9em;
+}
+.footer-copyright a{
+  margin: 3px;
 }
 
 @media screen and (max-width: 1090px) and (min-width: 900px) {
