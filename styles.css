@@ -1,7 +1,8 @@
 body {
   margin: 0;
 }
-a img{
+
+a img {
   border: 0px;
 }
 
@@ -10,81 +11,84 @@ a img{
   color: #fff;
 }
 
-.header-container span .second-word{
-font-size: 3em !important;
-color:#e57373;
-font-weight: 300;
-}
-.header-container span b{
-  font-size:3em;
-  color:#fff;
-
-margin-left: 15px;
+.header-container span .second-word {
+  font-size: 3em !important;
+  color: #e57373;
+  font-weight: 300;
 }
 
-#sidenav-overlay{
-  z-index:7!important;
+.header-container span b {
+  font-size: 3em;
+  color: #fff;
+  margin-left: 15px;
 }
-.side-nav .sidenav_wiatrak{
-  margin:5px;
-width:40px;
-height:40px;
+
+#sidenav-overlay {
+  z-index: 7!important;
+}
+
+.side-nav .sidenav_wiatrak {
+  margin: 5px;
+  width: 40px;
+  height: 40px;
 }
 
 .slogan {
   background-color: rgba(200, 100, 100, 0.5);
   padding: 20px 0px;
-  margin:80px 0px;
+  margin: 80px 0px;
   position: relative;
   top: 200px;
   text-align: center;
   line-height: 30px;
 }
-.slogan .first-word{
+
+.slogan .first-word {
   font-size: 1.2em !important;
-color:#fff;
-font-weight: 300;
+  color: #fff;
+  font-weight: 300;
 }
 
-.logo-image{
+.logo-image {
   width:90px;
   height:90px;
   z-index: 15;
-  display:inline;
+  display: inline;
 }
 
-.slogan h1{
-display:inline;
-color:#ffffff;
+.slogan h1 {
+  display: inline;
+  color: #ffffff;
 }
 
-.warsztaty-demo{
-  padding:5px;
-font-size: 16px;
-line-height: 2.7em;
-font-family: Roboto;
+.warsztaty-demo {
+  padding: 5px;
+  font-size: 16px;
+  line-height: 2.7em;
+  font-family: Roboto;
 }
 
-.fixed-action-btn .btn-large{
-  width:160px !important;
-  height:160px !important;
+.fixed-action-btn .btn-large {
+  width: 160px !important;
+  height: 160px !important;
 }
 
-.header-container{
+.header-container {
   position: fixed !important;
-  top:0px;
-  width:100%;
+  top: 0px;
+  width: 100%;
   z-index: 10;
 }
-.main-content{
+
+.main-content {
   max-height: 700px;
 }
 
-#bgvid{
+#bgvid {
   position: relative;
   left: 50%;
-  top:0;
-  height:900px;
+  top: 0;
+  height: 900px;
   min-width: 100%;
   width: auto;
   z-index: -100;
@@ -96,111 +100,103 @@ font-family: Roboto;
   background-size: cover;
 }
 
-.oferta-container, .faq-container, .kontakt-container, .metoda-container, .misja-container, .narzedzia-container, .omnie-container, .zespol-container{
+.oferta-container,
+.faq-container,
+.kontakt-container,
+.metoda-container,
+.misja-container,
+.narzedzia-container,
+.omnie-container,
+.zespol-container {
   padding-top: 45px;
 }
 
-.gray-background{
+.gray-background {
   background-color: #aaa;
   margin: 30px 0px;
   padding: 30px 20px;
-  color:#fff;
+  color: #fff;
 }
-.white-background{
+
+.white-background {
   background-color: #fff;
   margin: 30px 0px;
   padding: 0px 20px;
 }
 
-.gray-background img{
-  width:160px;
-  height:160px;
-  border-radius: 50%; 
-  position:relative;
+.gray-background img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: relative;
   text-align: center;
 }
 
-.values p{
+.values p {
   text-align: center;
 }
 
-.praktyki-container, .misja-container p {
+.praktyki-container,
+.misja-container p {
   line-height: 1.7em;
   font-size: 21px;
 }
-.misja-container img{
-  width:100px;
-  height:100px;
-  border-radius:50%;
+
+.misja-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
-.metoda-container p{
+.metoda-container p {
   text-align: justify;
 }
 
-.carousel-image-container-all{
-  height:180px !important;
-  width:340px;
-  margin:0 auto;
-  background-image: url("images/all.png");
-
+.carousel-slider {
+  height: 420px !important;
 }
 
-.carousel-image-container-moved{
-  height:140px !important;
-  width:200px;
-  margin:0 auto;
-  background-image: url("images/moved.png");
-}
+ .car-img {
+   max-height: 169px;
+   max-width: 313px;
+ }
 
-.carousel-image-container-lack{
-  height:180px !important;
-  width:340px;
-  margin:0 auto;
-  background-image: url("images/lack.png") no-repeat;
-}
-.carousel-image-container-chaos{
-  height:140px !important;
-  width:200px;
-  margin:0 auto;
-  background-image: url("images/chaos.jpg");
-}
-
-.card .card-image .card-title{
+.card .card-image .card-title {
   color: #000 !important;
 }
 
-#oferta .card .card-image img{
+#oferta .card .card-image img {
   height: 240px;
 }
 
-.metoda-container p{
-  font-size:18px;
+.metoda-container p {
+  font-size: 18px;
 }
 
 .metoda-link {
   color: red;
 }
+
 .metoda-link:hover {
   color: #757575;
 }
 
-.carousel-item p{
+.carousel-item p {
   margin: 3% 7% 3% 7%;
   font-size: 1.1em !important;
 }
 
-#narzedzia .card{
+#narzedzia .card {
   height: 200px;
 }
 
-#narzedzia .card .card-image{
+#narzedzia .card .card-image {
   max-height: 90px;
   max-width: 50px;
   display: inline;
 }
 
-#narzedzia .card .card-image img{
+#narzedzia .card .card-image img {
   height: 21%;
   width: 21%;
   border-radius: 50%;
@@ -209,106 +205,118 @@ font-family: Roboto;
   float:right;
 }
 
-#narzedzia .card .card-content p{
+#narzedzia .card .card-content p {
   font-size: 12px;
   width: 100%;
   text-align: justify;
-  clear:both;
+  clear: both;
 }
 
-#narzedzia .card .card-content .card-image h5{
+#narzedzia .card .card-content .card-image h5 {
   display: inline;
   line-height: 2em;
   padding: 4px;
   font-size: 1.6em;
   font-weight: 500;
-  margin:10px 0px 1px 0px;
+  margin: 10px 0px 1px 0px;
   float:left;
 }
-#narzedzia .card .card-content .card-image .mapa_konstelacji{
+
+#narzedzia .card .card-content .card-image .mapa_konstelacji {
   font-size: 1.3em;
 }
 
-.narzedzia-wstep{
+.narzedzia-wstep {
   text-align: justify;
   font-size: 18px;
 }
 
-.oferta-container .card .card-content{
+.oferta-container .card .card-content {
   height: 200px;
 }
-.collapsible-body ul{
+
+.collapsible-body ul {
   margin-top: 40px;
 }
 
-.collapsible-body ul li{
+.collapsible-body ul li {
   line-height: 1.7em;
   margin-left: 40px;
 }
-.name{
+
+.name {
   font-size: 2.5em;
 }
-.zespol-container div{
-text-align: justify;
+
+.zespol-container div {
+  text-align: justify;
 }
-.cytat{
+
+.cytat {
   font-size: 3em;
   font-weight: 200;
   font-family: 'Catamaran', sans-serif;
 }
-.kasia-img{
-  width:70%;
-  height:70%;
+
+.kasia-img {
+  width: 70%;
+  height: 70%;
 }
-table.centered tbody .firma td{
-  font-weight:bold;
+
+table.centered tbody .firma td {
+  font-weight: bold;
   padding: 0px !important;
 }
-tbody .task td{
+
+tbody .task td {
   font-size: 0.7em;
   padding: 2px!important;
-  margin:0px;
+  margin: 0px;
 }
 
-.widget{
-  width:30px;
-  height:30px;
-  margin:8px 4px;
-  opacity:0.7;
+.widget {
+  width: 30px;
+  height: 30px;
+  margin: 8px 4px;
+  opacity: 0.7;
 }
 
-.footer-wiatrak{
-  width:70px;
-  height:70px;
+.footer-wiatrak {
+  width: 70px;
+  height: 70px;
 }
 
-.footer-name, .footer-name1{
-font-weight: 300; 
-font-size: 1.3em;
+.footer-name,
+.footer-name1 {
+  font-weight: 300;
+  font-size: 1.3em;
 }
-.footer-name1{
+
+.footer-name1 {
   font-weight: 400;
 }
 
-.footer-data{
+.footer-data {
   font-weight: 200;
   font-size: 0.9em;
 }
 
 @media screen and (max-width: 1090px) and (min-width: 900px) {
-    .morebutton{
-      width: 10px!important;
-    }
+  .morebutton {
+    width: 10px!important;
+  }
 }
+
 @media screen and (max-width: 1107px) and (min-width: 993px) {
-    #narzedzia .card .card-content .card-image h5, #narzedzia .card .card-content .card-image .mapa_konstelacji{
-      margin:0px 0px 1px 0px;
-      font-size: 0.95em
-    }
+  #narzedzia .card .card-content .card-image h5,
+  #narzedzia .card .card-content .card-image .mapa_konstelacji {
+    margin: 0px 0px 1px 0px;
+    font-size: 0.95em
+  }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 600px) {
-    .gray-background img{
-      width: 50%;
-    }
+  .gray-background img {
+    width: 50%;
+  }
 }
