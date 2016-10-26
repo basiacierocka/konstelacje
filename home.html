@@ -16,20 +16,7 @@
 
   <script src="https://use.fontawesome.com/cf88420bc4.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script>$( document ).ready(function(){$(".button-collapse").sideNav();})</script>
-  <script>
-    $(document).ready(function(){
-      $('.collapsible').collapsible({
-        accordion : true // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-      });
-    });
-  </script>
-  <script>
-    $(document).ready(function(){
-      // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-      $('.modal-trigger').leanModal();
-    });
-  </script>
+  
 
 </head>
 
@@ -44,27 +31,27 @@
         </a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#oferta" class="active">Oferta</a></li>
-          <li><a href="#faq" class="active">FAQ</a></li>
-          <li><a href="#metoda" class="active">Metoda</a></li>
-          <li><a href="#narzedzia" class="active">Narzędzia</a></li>
-          <li><a href="#misja" class="active">Misja</a></li>
-          <li><a href="#zespol" class="active">Ekspert</a></li>
-          <li><a href="#omnie" class="active">O mnie</a></li>
-          <li><a href="#kontakt" class="active">Kontakt</a></li>
+          <li><a href="#oferta" class="active waves-effect">Oferta</a></li>
+          <li><a href="#faq" class="active waves-effect">FAQ</a></li>
+          <li><a href="#metoda" class="active waves-effect">Metoda</a></li>
+          <li><a href="#narzedzia" class="active waves-effect">Narzędzia</a></li>
+          <li><a href="#misja" class="active waves-effect">Misja</a></li>
+          <li><a href="#zespol" class="active waves-effect">Ekspert</a></li>
+          <li><a href="#omnie" class="active waves-effect">O mnie</a></li>
+          <li><a href="#kontakt" class="active waves-effect">Kontakt</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
           <li>
             <a href="#"><img class="sidenav_wiatrak" src="images/wiatrak.png"></a>
           </li>
-          <li><a href="#oferta">Oferta</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#metoda">Metoda</a></li>
-          <li><a href="#narzedzia">Narzędzia</a></li>
-          <li><a href="#misja">Misja</a></li>
-          <li><a href="#zespol">Ekspert</a></li>
-          <li><a href="#omnie">O mnie</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a class="waves-effect" href="#oferta">Oferta</a></li>
+          <li><a class="waves-effect" href="#faq">FAQ</a></li>
+          <li><a class="waves-effect" href="#metoda">Metoda</a></li>
+          <li><a class="waves-effect" href="#narzedzia">Narzędzia</a></li>
+          <li><a class="waves-effect" href="#misja">Misja</a></li>
+          <li><a class="waves-effect" href="#zespol">Ekspert</a></li>
+          <li><a class="waves-effect" href="#omnie">O mnie</a></li>
+          <li><a class="waves-effect" href="#kontakt">Kontakt</a></li>
         </ul>
       </div>
     </nav>
@@ -723,7 +710,7 @@
               <th class="yellow">2013</th>
               <th class="indigo lighten-2">2014</th>
               <th class="indigo lighten-2">2014</th>
-              <th class="pink accent-2">20  </th>
+              <th class="pink accent-2">2016</th>
             </tr>
           </thead>
           <tbody>
@@ -860,11 +847,18 @@
     <div class="footer-copyright">
       <div class="container">
         © BC 2016 All rights reserved
-        <a class="grey-text text-lighten-3 right" href="https://pl.linkedin.com/in/wegrzynkatarzyna"><img class="widget" src="https://lh3.googleusercontent.com/00APBMVQh3yraN704gKCeM63KzeQ-zHUi5wK6E9TjRQ26McyqYBt-zy__4i8GXDAfeys=w300">
+        <a class="grey-text text-lighten-3 right">
+          <i class="fa fa-skype fa-2x" aria-hidden="true"></i>
         </a>
-        <a class="grey-text text-lighten-3 right" href="https://pl.linkedin.com/in/wegrzynkatarzyna"><img class="widget" src="http://effistore.effidence.com/media/catalog/product/cache/2/thumbnail/1200x1200/9df78eab33525d08d6e5fb8d27136e95/g/o/google-plus-icon.jpg">
+        <a class="grey-text text-lighten-3 right">
+          <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
         </a>
-        <a href="https://pl.linkedin.com/in/wegrzynkatarzyna"></a>
+        <a class="grey-text text-lighten-3 right">
+          <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+        </a>
+        <a class="grey-text text-lighten-3 right" href="https://pl.linkedin.com/in/wegrzynkatarzyna">
+          <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+        </a>
       </div>
       <div>
       </div>
@@ -877,6 +871,12 @@
     $( window ).load(function() { $( '#bgvid' ).get(0).play();});
     $( document ).ready(function() {
       $('.carousel.carousel-slider').carousel({full_width: true});
+      // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+      $('.modal-trigger').leanModal();
+      $('.collapsible').collapsible({
+        accordion : true // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+      });
+      $(".button-collapse").sideNav();
     });
   </script>
 </body>
