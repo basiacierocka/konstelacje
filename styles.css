@@ -1,5 +1,4 @@
-body {
-  margin: 0;
+  margin: 0 auto;
 }
 
 a img {
@@ -23,18 +22,27 @@ a img {
   margin-left: 15px;
 }
 
-#sidenav-overlay {
+.header-wiatrak{
+width:40px;
+height:40px;
+margin-left: 5px;
+}
+
+.side-nav{
+width: 93px!important;
+}
+
+#sidenav-overlay, .lean-overlay {
   z-index: 7!important;
 }
 
 .side-nav .sidenav_wiatrak {
-  margin: 5px;
+  margin: 12px;
   width: 40px;
   height: 40px;
 }
-
 .slogan {
-  background-color: rgba(200, 100, 100, 0.5);
+  background-color: rgba(110, 110, 110, 0.5);
   padding: 20px 0px;
   margin: 80px 0px;
   position: relative;
@@ -67,6 +75,10 @@ a img {
   line-height: 2.7em;
   font-family: Roboto;
 }
+.modal{
+  width:75%!important;
+  max-height:80%!important;
+}
 
 .fixed-action-btn .btn-large {
   width: 160px !important;
@@ -80,6 +92,10 @@ a img {
   z-index: 10;
 }
 
+.header-container a{
+font-weight: 300;
+}
+
 .main-content {
   max-height: 700px;
 }
@@ -90,7 +106,7 @@ a img {
   top: 0;
   height: 900px;
   min-width: 100%;
-  width: auto;
+  width: 100%;
   z-index: -100;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
@@ -114,7 +130,7 @@ a img {
 .gray-background {
   background-color: #aaa;
   margin: 0px 0px;
-  padding: 5px 20px;
+  padding: 2px 20px;
   color: #fff;
 }
 
@@ -123,10 +139,13 @@ a img {
   margin: 30px 0px;
   padding: 0px 20px;
 }
-
+.white-background p{
+font-size: 18px;
+font-weight: 300;
+}
 .gray-background img {
-  width: 160px;
-  height: 160px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   position: relative;
   text-align: center;
@@ -142,21 +161,17 @@ a img {
   font-size: 21px;
 }
 
-.misja-container img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-
 .metoda-container p {
   text-align: justify;
+  font-weight:300;
+  font-size: 18px;
 }
 
 .carousel-slider {
   height: 420px !important;
 }
 
- .car-img {
+.car-img {
    max-height: 169px;
    max-width: 313px;
  }
@@ -169,9 +184,6 @@ a img {
   height: 240px;
 }
 
-.metoda-container p {
-  font-size: 18px;
-}
 
 .metoda-link {
   color: red;
@@ -229,6 +241,7 @@ a img {
 .narzedzia-wstep {
   text-align: justify;
   font-size: 18px;
+  font-weight: 300;
 }
 
 .oferta-container .card .card-content {
@@ -252,14 +265,6 @@ a img {
   text-align: justify;
 }
 
-
-
-.cytat {
-  font-size: 3em;
-  font-weight: 200;
-  font-family: 'Catamaran', sans-serif;
-}
-
 .kasia-img {
   width: 70%;
   height: 70%;
@@ -274,6 +279,13 @@ a img {
   cursor: default;
   background: #000;
 }
+.hovereffect .material-icons{
+  font-size: 1.5rem;
+  position:absolute;
+  top: 0px;
+  right: 0px;
+  color:gray;
+}
 
 .hovereffect .overlay {
   width: 100%;
@@ -285,8 +297,8 @@ a img {
   padding: 50px 20px;
 }
 .hovereffect .overlay p{
-padding-top:60%;
-font-size: 1.1em;
+padding-top:63%;
+font-size: 1em;
 font-weight: 200;
 }
 
@@ -351,9 +363,28 @@ font-weight: 100;
   transform: translate3d(0,0,0);
 }
 
-.dolnypasek{
-font-size: 1em;
+.klienci{
+  display: none;
+}
+.justify{
+  text-align:justify;
+}
+
+.dolnypasek {
+font-size: 2em;
 font-weight:100;
+text-align: center;
+}
+.fa-circle-o{
+  color:#f8bbd0;
+}
+.dolnypasek div .description{
+  font-size:0.5em !important;
+  font-weight: 200;
+  line-height: 0.5em!important
+}
+.mission-text{
+font-weight: 300;
 }
 
 .pasekonkasia{
@@ -372,26 +403,19 @@ tbody .task td {
   margin: 0px;
 }
 
-.widget {
-  width: 30px;
-  height: 30px;
-  margin: 8px 4px;
-  opacity: 0.7;
-}
-
 .footer-wiatrak {
-  width: 70px;
-  height: 70px;
-} 
+  width: 60px;
+  height: 60px;
+}
 
 .footer-name,
 .footer-name1 {
-  font-weight: 300;
+  font-weight: 200;
   font-size: 1.3em;
 }
 
 .footer-name1 {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .footer-data {
@@ -400,6 +424,18 @@ tbody .task td {
 }
 .footer-copyright a{
   margin: 3px;
+}
+
+footer.page-footer {
+  padding-top: 4px !important;
+}
+
+.button-orange{
+  padding: 10px!important;
+}
+
+.sendme-button:hover{
+color: #fce4ec;
 }
 
 .values p {
@@ -427,22 +463,86 @@ tbody .task td {
   line-height: 2em;
 }
 
-@media screen and (max-width: 1090px) and (min-width: 900px) {
-  .morebutton {
-    width: 10px!important;
-  }
+.up-button{
+  position:fixed;
+  bottom: 10px;
+  right:5px;
+  padding-right:18px!important;
+  padding-left:18px!important;
 }
 
-@media screen and (max-width: 1107px) and (min-width: 993px) {
+@media screen and (max-width: 1125px) and (min-width: 993px) {
   #narzedzia .card .card-content .card-image h5,
   #narzedzia .card .card-content .card-image .mapa_konstelacji {
     margin: 0px 0px 1px 0px;
-    font-size: 0.95em
+    font-size: 0.95em;
   }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 600px) {
   .gray-background img {
-    width: 50%;
+    width: 80%;
+    height:80%;
   }
+}
+@media screen and (max-width: 1000px) {
+  .responsive-table{
+    display:none!important
+    }
+  .klienci{
+  display: block;
+}
+  }
+
+@media screen and (max-width: 1100px) and (min-width: 600px) {
+  #oferta .card .card-image img {
+    height: 170px;
+  }
+  .card-action .oferta-button-1{
+    width:100%;
+    margin-bottom: 2px;
+  }
+   .card-action .oferta-button-2{
+   width:100%;
+  }
+  .card .card-content span.card-title{
+    font-size: 1.2em!important;
+    line-height: 1.6em;
+  }
+  .card .card-content p{
+font-size: 0.9em;
+  }
+  .card .card-content{
+    max-height: 170px
+  }
+  .hovereffect .overlay p{
+padding-top:47%;
+font-size: 0.8em;
+font-weight: 100;
+}
+}
+
+@media screen and (max-width: 1050px) {
+.header-container span b{
+  font-size:2.5em!important;
+}
+
+.slogan {
+  padding: 20px 0px;
+  margin: 80px 0px;
+  position: relative;
+  top: -20px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.main-content {
+  max-height: 500px;
+}
+}
+
+@media screen and (max-width: 430px) and (min-width: 50px) {
+.header-container span b, .header-container span .second-word{
+  font-size:1.4em!important;
+}
 }
