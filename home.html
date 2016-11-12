@@ -17,7 +17,12 @@
 <body>
   <div class="header-container row">
     <nav>
-      <div class="nav-wrapper pink accent-4 navbar-fixed"><a href="home.html"><span><img class="header-wiatrak" src="images/wiatrak.png"><b>Konstelacje</b> <b class="second-word">Polska</b></span></a> <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <div class="nav-wrapper pink accent-4 navbar-fixed">
+        <a href="home.html">
+        <span>
+          <b>Konstelacje</b> <b class="second-word">Polska</b>
+        </span></a> <a href="#" data-activates="mobile-demo" class="button-collapse">
+          <i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="#oferta" class="active waves-effect">Oferta</a></li>
             <li><a href="#faq" class="active waves-effect">FAQ</a></li>
@@ -62,59 +67,61 @@
           <div id="demo" class="modal">
             <div class="modal-content">
               <h4 class="pink-text center">Zapisz się i odkryj konstelacje!</h4>
-              <p class="center">Trójmiasto – Warszawa – Poznań </p>
+              <p class="center"><b>Trójmiasto – Warszawa – Poznań</b></p>
               <div class="row">
                 <div class="center col s12">
                   <h5>TEMATY WARSZTATÓW:</h5>
                 </div>
-                <div class="col red-text s4">
+                <div class="col red-text  s4">
                 <ul>
-                  <b>FAMILY CONSTELLATION:</b>
-                  <li>
-                    Droga do rodziców
+                  <b class="naglowek-kolumny pink white-text">BUSINESS CONSTELLATION:</b>
+                  <li class="black-text nazwy-kolumny">
+                    Moje miejsce w firmie
                   </li>
-                  <li>
-                    Droga do kobiecości
+                  <li class="black-text nazwy-kolumny">
+                    Relacje w zespole
                   </li>
-                  <li>
-                    Związki
+                  <li class="black-text nazwy-kolumny">
+                    Zarabianie pieniędzy, nic osobistego
+                  </li>
+                  <li class="black-text nazwy-kolumny">
+                    Czy mój produkt będzie się sprzedawał?
                   </li>
                 </ul>
               </div>
-              <div class="col red-text  s4">
+              <div class="col red-text s4">
               <ul>
-                <b>COACHING CONSTELLATION:</b>
-                <li>
-                  Cel jawny i ukryty
-                </li>
-                <li>
+                <b class="naglowek-kolumny pink white-text">COACHING CONSTELLATION:</b>
+                <li class="black-text nazwy-kolumny">
                   Branie i dawanie
                 </li>
-                <li>
-                  Co jest dla Ciebie ważne?
+                <li class="black-text nazwy-kolumny">
+                  Co jest ważne dla Ciebie?
                 </li>
-                <li>
+                <li class="black-text nazwy-kolumny">
+                  Cel jawny i ukryty
+                </li>
+                <li class="black-text nazwy-kolumny">
                   Droga do celu
                 </li>
               </ul>
             </div>
-            <div class="col red-text  s4">
-            <ul>
-              <b>BUSINESS CONSTELLATION:</b>
-              <li>
-                Zarabianie pieniędzy, nic osobistego
-              </li>
-              <li>
-                Moje miejsce w firmie
-              </li>
-              <li>
-                Czy mój produkt będzie się sprzedawał?
-              </li>
-              <li>
-                Relacje w zespole
-              </li>
-            </ul>
-          </div>
+                <div class="col pink-text s4">
+                <ul>
+                  <b class="naglowek-kolumny pink white-text">FAMILY CONSTELLATION:</b>
+                  <li class="black-text nazwy-kolumny">
+                    Droga do rodziców
+                  </li>
+                  <li class="black-text nazwy-kolumny">
+                    Droga do kobiecości
+                  </li>
+                  <li class="black-text nazwy-kolumny">
+                    Związki
+                  </li>
+                </ul>
+              </div>
+
+
               </div>
 
                 <p class="center">Szczegóły zostaną wysłane na podany adres email.</p>
@@ -175,7 +182,7 @@
                 </div>
                 <div class="modal-footer"><a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Wyślij</a></div>
                 </div>
-                <video playsinline="" autoplay="" mute="" loop="" poster="images/business.jpg" id="bgvid"><source src="film_pink.mp4" type="video/mp4"></video>
+                <video playsinline="" autoplay="" mute="" loop="" poster="images/business.jpg" id="bgvid"><source src="filmpink.mov" type="video/mp4"></video>
               </div>
 
             <div class="oferta-container" id="oferta">
@@ -188,76 +195,81 @@
                 <div class="row">
                   <div class="col s12 m4">
                     <div class="card">
-                      <div class="card-image"><img src="images/business.jpg"></div>
+                      <div class="card-image">
+                        <video playsinline="" autoplay="" mute="" loop="">
+                          <source src="film-pink.mov" type="video/mp4"></video>
+                          </div>
                       <div class="card-content"><span class="card-title">BUSINESS CONSTELLATION</span>
                         <p>Dla właścicieli firm, prezesów, dyrektorów i team leaderów.</p>
                       </div>
                       <div class="card-action">
-                        <a class="oferta-button-1 waves-effect waves-light btn grey darken-2  B-trigger" href="#modalinfobc"></a>
+                        <!--a class="oferta-button-1 waves-effect waves-light btn grey darken-2  B-trigger" href="#modalinfobc"></a-->
                         <a class="oferta-button-2 waves-effect waves-light btn grey darken-2 modal-trigger" href="#modalbc">Zapisz się</a></div>
                       </div>
                     </div>
-    <div id="modalbc" class="modal">
-      <div class="modal-content">
-        <h4>Formularz kontaktowy</h4>
-        <p>Interesuje Cię nasza oferta dla biznesu?<br>
-          Zostaw nam namiar na siebie - skontaktujemy się z Tobą!</p>
-          <div class="row">
-            <form class="col s12" action=
-            "https://formspree.io/katarzyna.wegrzyn@wp.pl" method="post">
-            <div class="row">
-              <div class="input-field col s6"><i class=
-                "material-icons prefix">perm_identity</i> <input id="name1" type=
-    "text" name="name" class="validate"> <label for="name1">Imię i
-      Nazwisko</label></div>
-      <div class="input-field col s6"><i class=
-        "material-icons prefix">business</i> <input id="firma1" type="text"
-        class="validate"> <label for="firma1">Firma</label></div>
-        <div class="input-field col s6"><i class=
-          "material-icons prefix">phone</i> <input id="icon_telephone1" type=
-          "tel" name="_replyto" class="validate"> <label for=
-          "icon_telephone1">Nr telefonu</label></div>
-          <div class="input-field col s6"><i class=
-            "material-icons prefix">email</i> <input id="email1" type="email"
-            name="_replyto" class="validate"> <label for="email1">Twój
-              Email</label></div>
-                    <div class="input-field col s6"><i class=
-            "material-icons prefix">mode_edit</i> <input id="title1" type=
-            "text" name="title" value="Oferta Business Constellation" class=
-            "validate"> <label for="title1">Temat</label></div>
-          </div>
-        </form>
-      </div>
-      <div class="row">
-        <div class="col s12">
-          <p><input type="checkbox" id="zgoda1"> <label for="zgoda1">Wyrażam
-            zgodę na przetwarzanie powyższych danych osobowych przez
-            Konstelacje Polska Katarzyna Węgrzyn w celu realizacji warsztatów i
-            konsultacji zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie
-            danych osobowych.</label></p>
-            <p><input type="checkbox" id="zgoda2"> <label for="zgoda2">Wyrażam
-              zgodę na przetwarzanie powyższych danych osobowych przez
-              Konstelacje Polska Katarzyna Węgrzyn w celach marketingowych i
-              handlowych zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie
-              danych osobowych oraz ustawą z dnia 18 lipca 2002 r. o świadczeniu
-              usług drogą elektroniczną.</label></p>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer"><a href="#!" class=
-          " modal-action modal-close waves-effect waves-green btn-flat">Wyślij</a></div>
-        </div>
+                    <div id="modalbc" class="modal">
+                      <div class="modal-content">
+                        <h4>Formularz kontaktowy</h4>
+                        <p>Interesuje Cię nasza oferta dla biznesu?<br>
+                          Zostaw nam namiar na siebie - skontaktujemy się z Tobą!</p>
+                          <div class="row">
+                            <form class="col s12" action="https://formspree.io/katarzyna.wegrzyn@wp.pl" method="post">
+                            <div class="row">
+                              <div class="input-field col s6"><i class="material-icons prefix">perm_identity</i>
+                                <input id="name1" type="text" name="name" class="validate">
+                                <label for="name1">Imię i Nazwisko</label>
+                              </div>
+                              <div class="input-field col s6">
+                                <i class="material-icons prefix">business</i>
+                                <input id="firma1" type="text" class="validate">
+                                <label for="firma1">Firma</label>
+                              </div>
+                              <div class="input-field col s6">
+                                <i class="material-icons prefix">phone</i>
+                                <input id="icon_telephone1" type="tel" name="_replyto" class="validate">
+                                <label for="icon_telephone1">Nr telefonu</label>
+                              </div>
+                              <div class="input-field col s6">
+                                <i class="material-icons prefix">email</i>
+                                <input id="email1" type="email" name="_replyto" class="validate">
+                                <label for="email1">Twój Email</label>
+                              </div>
+                              <div class="input-field col s6">
+                                <i class="material-icons prefix">mode_edit</i>
+                                <input id="title1" type="text" name="title" value="Oferta Business Constellation" class="validate">
+                                <label for="title1">Temat</label>
+                              </div>
+                          </div>
+                        <div class="col s12">
+                          <p><input type="checkbox" id="zgoda1"> <label for="zgoda1">Wyrażam
+                            zgodę na przetwarzanie powyższych danych osobowych przez
+                            Konstelacje Polska Katarzyna Węgrzyn w celu realizacji warsztatów i
+                            konsultacji zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie
+                            danych osobowych.</label></p>
+                            <p><input type="checkbox" id="zgoda2"> <label for="zgoda2">Wyrażam
+                              zgodę na przetwarzanie powyższych danych osobowych przez
+                              Konstelacje Polska Katarzyna Węgrzyn w celach marketingowych i
+                              handlowych zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie
+                              danych osobowych oraz ustawą z dnia 18 lipca 2002 r. o świadczeniu
+                              usług drogą elektroniczną.</label></p>
+                            </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Wyślij</a>
+                        </div>
+                      </div>
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image"><img src="images/coaching.jpg"></div>
-            <div class="card-content"><span class="card-title">COACHING
-              CONSTELLATION</span>
+            <div class="card-content"><span class="card-title">COACHING CONSTELLATION</span>
               <p>Dla trenerów, coachów, konsultantów biznesu i psychologów.</p>
             </div>
-            <div class="card-action"><a class=
+            <div class="card-action"><!--a class=
               "oferta-button-1 waves-effect waves-light grey darken-2 btn modal-trigger"
-              href="#modalinfocc"></a> <a class=
-              "oferta-button-2 waves-effect waves-light grey darken-2 btn modal-trigger"
+              href="#modalinfocc"></a-->
+              <a class="oferta-button-2 waves-effect waves-light grey darken-2 btn modal-trigger"
               href="#modalcc">Zapisz się</a></div>
             </div>
           </div>
@@ -267,8 +279,7 @@
               <p>Interesuje Cię nasza oferta dla Coachingu?<br>
                 Zostaw nam namiar na siebie - skontaktujemy się z Tobą!</p>
                 <div class="row">
-                  <form class="col s12" action=
-                  "https://formspree.io/katarzyna.wegrzyn@wp.pl" method="post">
+                  <form class="col s12" action="https://formspree.io/katarzyna.wegrzyn@wp.pl" method="post">
                   <div class="row">
                     <div class="input-field col s6"><i class=
                       "material-icons prefix">perm_identity</i> <input id="name2" type=
@@ -290,9 +301,7 @@
                                   "text" name="title" value="Oferta Coaching Constellation" class=
                                   "validate"> <label for="title2">Temat</label></div>
                                 </div>
-                              </form>
-                            </div>
-                            <div class="row">
+
                               <div class="col s12">
                                 <p><input type="checkbox" id="zgoda3"> <label for="zgoda3">Wyrażam
                                   zgodę na przetwarzanie powyższych danych osobowych przez
@@ -306,6 +315,7 @@
                                     danych osobowych oraz ustawą z dnia 18 lipca 2002 r. o świadczeniu
                                     usług drogą elektroniczną.</label></p>
                                   </div>
+                                  </form>
                                 </div>
                               </div>
                               <div class="modal-footer"><a href="#!" class=
@@ -318,10 +328,10 @@
                                     CONSTELLATION</span>
                                     <p>Dla rodzin i pasjonatów rozwoju osobistego.</p>
                                   </div>
-                                  <div class="card-action"><a class=
-                                    "oferta-button-1 waves-effect waves-light grey darken-2 btn modal-trigger"
-                                    href="#modalinfofc"></a> <a class=
-                                    "oferta-button-2 waves-effect waves-light grey darken-2 btn modal-trigger"
+                                  <div class="card-action">
+                                    <!--a class="oferta-button-1 waves-effect waves-light grey darken-2 btn modal-trigger"
+                                    href="#modalinfofc"></a-->
+                                    <a class="oferta-button-2 waves-effect waves-light grey darken-2 btn modal-trigger"
                                     href="#modalfc">Zapisz się</a></div>
                                   </div>
                                 </div>
@@ -332,52 +342,56 @@
                                   <p>Interesuje Cię nasza oferta dla rodziny?<br>
                                     Zostaw nam namiar na siebie - skontaktujemy się z Tobą!</p>
                                     <div class="row">
-                                          <form class="col s12" action=
-              "https://formspree.io/katarzyna.wegrzyn@wp.pl" method="post">
-              <div class="row">
-                <div class="input-field col s6"><i class=
-                  "material-icons prefix">perm_identity</i> <input id="name3" type=
-                  "text" name="name" class="validate"> <label for="name3">Imię i
-                    Nazwisko</label></div>
-                    <div class="input-field col s6"><i class=
-                      "material-icons prefix">business</i> <input id="firma3" type="text"
-                      class="validate"> <label for="firma3">Firma</label></div>
-                      <div class="input-field col s6"><i class=
-                        "material-icons prefix">phone</i> <input id="icon_telephone3" type=
-                        "tel" name="_replyto" class="validate"> <label for=
-                        "icon_telephone3">Nr telefonu</label></div>
-                        <div class="input-field col s6"><i class=
-                          "material-icons prefix">email</i> <input id="email3" type="email"
-                          name="_replyto" class="validate"> <label for="email3">Twój
-                            Email</label></div>
-                            <div class="input-field col s6"><i class=
-                              "material-icons prefix">mode_edit</i> <input id="title3" type=
-                              "text" name="title" value="Oferta Family Constellation" class=
-                              "validate"> <label for="title3">Temat</label></div>
-                            </div>
-                          </form>
-                        </div>
-                        <div class="row">
-                          <div class="col s12">
-                            <p><input type="checkbox" id="zgoda5"> <label for="zgoda5">Wyrażam
-                              zgodę na przetwarzanie powyższych danych osobowych przez
-                              Konstelacje Polska Katarzyna Węgrzyn w celu realizacji warsztatów i
-                              konsultacji zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie
-                              danych osobowych.</label></p>
-                              <p><input type="checkbox" id="zgoda6"> <label for="zgoda6">Wyrażam
-                                zgodę na przetwarzanie powyższych danych osobowych przez
-                                Konstelacje Polska Katarzyna Węgrzyn w celach marketingowych i
-                                handlowych zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie
-                                danych osobowych oraz ustawą z dnia 18 lipca 2002 r. o świadczeniu
-                                usług drogą elektroniczną.</label></p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="modal-footer"><a href="#!" class=
-                            " modal-action modal-close waves-effect waves-green btn-flat">Wyślij</a></div>
-                          </div>
-                        </div>
-                      </div>
+                                      <form class="col s12" action="https://formspree.io/katarzyna.wegrzyn@wp.pl" method="post">
+                                        <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">perm_identity</i>
+                  <input id="name3" type="text" name="name" class="validate">
+                  <label for="name3">Imię i Nazwisko</label>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">business</i>
+                  <input id="firma3" type="text" class="validate">
+                  <label for="firma3">Firma</label>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">phone</i>
+                  <input id="icon_telephone3" type="tel" name="_replyto" class="validate">
+                  <label for="icon_telephone3">Nr telefonu</label>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">email</i>
+                  <input id="email3" type="email" name="_replyto" class="validate">
+                  <label for="email3">Twój Email</label>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">mode_edit</i>
+                  <input id="title3" type="text" name="title" value="Oferta Family Constellation" class="validate">
+                  <label for="title3">Temat</label>
+                </div>
+              </div>
+            <div class="col s12">
+              <p><input type="checkbox" id="zgoda5">
+                <label for="zgoda5">Wyrażam zgodę na przetwarzanie powyższych danych osobowych przez
+                Konstelacje Polska Katarzyna Węgrzyn w celu realizacji warsztatów i
+                konsultacji zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie
+                danych osobowych.</label>
+              </p>
+                <p><input type="checkbox" id="zgoda6">
+                  <label for="zgoda6">Wyrażam zgodę na przetwarzanie powyższych danych osobowych przez
+                  Konstelacje Polska Katarzyna Węgrzyn w celach marketingowych i
+                  handlowych zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie
+                  danych osobowych oraz ustawą z dnia 18 lipca 2002 r. o świadczeniu
+                  usług drogą elektroniczną.</label></p>
+                </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer"><a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Wyślij</a>
+            </div>
+          </div>
+        </div>
+      </div>
     <div class="faq-container" id="faq">
       <div class="container">
         <div class="row">
@@ -388,35 +402,36 @@
         <div class="row">
           <ul class="collapsible" data-collapsible="accordion">
             <li>
-              <div class="collapsible-header"><i class=
-                "large material-icons">group_work</i>Czym są ustawienia systemowe –
-                konstelacje?</div>
-                <div class="collapsible-body">
-                  <p>To holistyczna metoda oparta o doświadczenie klienta.<br>
-                    Konstelacje zajmują się porządkowaniem systemów (rodziny, zespołu,
-                    firmy). Celem jest współdziałanie i kooperacja.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="collapsible-header"><i class=
-                    "large material-icons">visibility</i> Jak wyglądają warsztaty
-                    konstelacji w firmie, zespole, rodzinie?</div>
-                    <div class="collapsible-body">
-                      <p>Klient, poprzez zadanie pytania, deklaruje w jednym zdaniu czym
-                        chce zająć się na warsztacie, np.: "Co stoi mi na drodze do sukcesu
-                        i zarabiania pieniędzy?".<br>
-                        Następnie ustawiający wybiera reprezentantów (osoby, figurki
-                        playmobile sets).<br>
-                        Reprezentanci pokazują ciałem, miną, zachowaniem, jakie są relacje
-                        między elementami systemu. Od razu widać które elementy
-                        współdziałają, mają więź, a które walczą ze sobą, nienawidzą się i
-                        wykluczają.</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="collapsible-header"><i class=
-                        "large material-icons">search</i> Co można sprawdzić metodą
-                        konstelacji?</div>
+              <div class="collapsible-header">
+                <i class="large material-icons">group_work</i>Czym są ustawienia systemowe – konstelacje?
+              </div>
+              <div class="collapsible-body">
+                <p>To holistyczna metoda oparta o doświadczenie klienta.<br> Konstelacje zajmują się porządkowaniem systemów (rodziny, zespołu,
+                    firmy). Celem jest współdziałanie i kooperacja.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class=
+                  "large material-icons">visibility</i> Jak wyglądają warsztaty
+                  konstelacji w firmie, zespole, rodzinie?</div>
+                  <div class="collapsible-body">
+                    <p>Klient, poprzez zadanie pytania, deklaruje w jednym zdaniu czym
+                      chce zająć się na warsztacie, np.: "Co stoi mi na drodze do sukcesu
+                      i zarabiania pieniędzy?".<br>
+                      Następnie ustawiający wybiera reprezentantów (osoby, figurki
+                      playmobile sets).<br>
+                      Reprezentanci pokazują ciałem, miną, zachowaniem, jakie są relacje
+                      między elementami systemu. Od razu widać które elementy
+                      współdziałają, mają więź, a które walczą ze sobą, nienawidzą się i
+                      wykluczają.
+                    </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header">
+                      <i class="large material-icons">search</i> Co można sprawdzić metodą konstelacji?
+                    </div>
                         <div class="collapsible-body">
                           <ul>
                             <li>Chcę dowiedzieć się czy produkt będzie się sprzedawał.</li>
@@ -434,63 +449,66 @@
                             </div>
                           </li>
                           <li>
-                            <div class="collapsible-header"><i class=
-                              "large material-icons">loop</i> Co działa w konstelacjach?</div>
+                            <div class="collapsible-header">
+                              <i class="large material-icons">loop</i> Co działa w konstelacjach?
+                            </div>
+                            <div class="collapsible-body">
+                              <p>W konstelacjach działa ujawnienie niewidocznych, nieświadomych uwikłań i nieporządków.
+                                To jak gra w otwarte karty (pokera). Po odkryciu kart, nie można już blefować.
+                              </p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="collapsible-header">
+                              <i class="large material-icons">star</i> Czym wyróżnia się to narzędzie?
+                            </div>
+                            <div class="collapsible-body">
+                              <p>Konstelacje są techniką projekcyjną, nie ma w nich procedur i
+                                  analizy. Od razu pokazuje się nam główny problem. Jest techniką
+                                  doświadczalną, nie ma potrzeby „wierzyć” (czyli opierać się na tym,
+                                  co ktoś mówi). Można tego doświadczyć osobiście na warsztatach
+                                  demonstracyjnych i wypracować własne zdanie o tej metodzie.
+                                </p>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="collapsible-header">
+                                <i class="large material-icons">new_releases</i>Na czym polega innowacyjność tego narzędzia?
+                              </div>
                               <div class="collapsible-body">
-          <p>W konstelacjach działa ujawnienie niewidocznych, nieświadomych
-            uwikłań i nieporządków. To jak gra w otwarte karty (pokera). Po
-            odkryciu kart, nie można już blefować.</p>
-          </div>
-  </li>
-  <li>
-    <div class="collapsible-header"><i class=
-      "large material-icons">star</i> Czym wyróżnia się to
-      narzędzie?</div>
-      <div class="collapsible-body">
-        <p>Konstelacje są techniką projekcyjną, nie ma w nich procedur i
-          analizy. Od razu pokazuje się nam główny problem. Jest techniką
-          doświadczalną, nie ma potrzeby „wierzyć” (czyli opierać się na tym,
-          co ktoś mówi). Można tego doświadczyć osobiście na warsztatach
-          demonstracyjnych i wypracować własne zdanie o tej metodzie.</p>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header"><i class=
-          "large material-icons">new_releases</i>Na czym polega innowacyjność
-          tego narzędzia?</div>
-          <div class="collapsible-body">
-            <p>W metodach analitycznych zwykle nie dochodzi się do sedna
-              sprawy, gdyż analizuje się tylko to, co widać. Pomija się analizę
-              tego, czego nie wiemy. To myślenie dedukcyjne, nie widzi się
-              całości obrazu. Konstelacje dają możliwość sprawdzenia przyczyny,
-              która przeszkadza w tym, aby system (rodzina, zespół, firma) mógł
-              się rozwijać i działać.</p>
-            </div>
-          </li>
-          <li>
-            <div class="collapsible-header"><i class=
-              "large material-icons">supervisor_account</i> Kto może skorzystać z
-              tej metody?</div>
-              <div class="collapsible-body">
-                <p>Korzystać może z niej każdy, zachowując zasady porządku, czyli
-                  ustawiać można siebie, swoje dzieci, pracowników. Dziecku nie wolno
-                  ustawiać rodziców, szefów, partnerów i innych obcych ludzi.</p>
-                </div>
-              </li>
-              <li>
-                <div class="collapsible-header"><i class=
-                  "large material-icons">payment</i> Czy i w jaki sposób ta "metoda"
-                  oszczędza czas i pieniądze klientów?</div>
-                  <div class="collapsible-body">
-                    <p>Metoda jest krótkoterminowa – zwykle wystarczy jeden warsztat,
-                      na którym ukazuje się główny problem. Po jego przepracowaniu,
-                      pozostałe problemy, jak kostki domina, rozwiązują się same.</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+                                <p>W metodach analitycznych zwykle nie dochodzi się do sedna
+                                  sprawy, gdyż analizuje się tylko to, co widać. Pomija się analizę
+                                  tego, czego nie wiemy. To myślenie dedukcyjne, nie widzi się
+                                  całości obrazu. Konstelacje dają możliwość sprawdzenia przyczyny,
+                                  która przeszkadza w tym, aby system (rodzina, zespół, firma) mógł
+                                  się rozwijać i działać.
+                                </p>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="collapsible-header">
+                                <i class="large material-icons">supervisor_account</i> Kto może skorzystać z
+                                tej metody?</div>
+                                <div class="collapsible-body">
+                                  <p>Korzystać może z niej każdy, zachowując zasady porządku, czyli
+                                    ustawiać można siebie, swoje dzieci, pracowników. Dziecku nie wolno
+                                    ustawiać rodziców, szefów, partnerów i innych obcych ludzi.</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="collapsible-header">
+                                    <i class="large material-icons">payment</i> Czy i w jaki sposób ta "metoda" oszczędza czas i pieniądze klientów?</div>
+                                    <div class="collapsible-body">
+                                      <p>Metoda jest krótkoterminowa – zwykle wystarczy jeden warsztat,
+                                        na którym ukazuje się główny problem. Po jego przepracowaniu,
+                                        pozostałe problemy, jak kostki domina, rozwiązują się same.
+                                      </p>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
 <div class="metoda-container" id="metoda">
   <div class="container">
     <div class="row">
@@ -531,8 +549,7 @@
                   akceptację nowego produktu, zanim wejdzie on na rynek. Zastosowanie
                   tej metody przyczyniło się do sukcesu takich znanych marek, jak:
                   <b>IBM, Microsoft, Konica, Dresdner Bank,</b> czy <b>HP</b>.
-                  <a class="metoda-link" href=
-                  "http://www.treco.pl/wiedza/artykuly-szczegoly/id/698/page/74/ustawienia-systemowe-w-biznesie-recepta-na-problemy-twojej-firmy">
+                  <a class="metoda-link" href="http://www.treco.pl/wiedza/artykuly-szczegoly/id/698/page/74/ustawienia-systemowe-w-biznesie-recepta-na-problemy-twojej-firmy">
                   WIĘCEJ</a></p>
                 </div>
                 <div class="col m8 s12">
@@ -545,19 +562,19 @@
                       przykład porządku w systemie, jakim jest rodzina, zespół i
                       firma.</p>
                       <img class="car-img" src="images/all.png"></div>
-                      <div class="carousel-item blue lighten-1 white-text" href="#two!">
+                      <div class="carousel-item light-blue accent-2 white-text" href="#two!">
                         <h2>Nieporządek systemowy – chaos</h2>
                         <p class="white-text">Brak połączeń, więzi, brak relacji. To
                           przykład chaosu, jaki może występować w rodzinie, firmie i
                           relacjach.</p>
                           <img class="car-img" src="images/chaos.png"></div>
-                          <div class="carousel-item red white-text" href="#three!">
+                          <div class="carousel-item blue white-text" href="#three!">
                             <h2>Nieporządek systemowy - kogoś brakuje</h2>
                             <p class="white-text">Brakuje jednego elementu. Jeśli ktoś został
                               wykluczony, kogoś brakuje, odszedł lub sam się wykluczył, to w
                               systemie (rodzinie, zespole, firmie) występuje nieporządek.</p>
                               <img class="car-img" src="images/lack.png"></div>
-                              <div class="carousel-item teal accent-4 white-text" href="#four!">
+                              <div class="carousel-item light-blue darken-4 white-text" href="#four!">
                                 <h2>Nieporządek systemowy - ktoś zajmuje czyjeś miejsce</h2>
                                 <p class="white-text">Puzzle są zamienione, jeśli ktoś jest nie na
                                   swoim miejscu lub zajmuje komuś miejsce.</p>
@@ -689,6 +706,9 @@
                 <div class="container values">
                   <h4>Wartości</h4>
                   <div class="values row">
+                    <div class="col m3 s6"><img src="images/idea.jpg">
+                      <p>Idea</p>
+                    </div>
                     <div class="col m3 s6"><img src="images/prosze.jpg">
                       <p>Poproszę</p>
                     </div>
@@ -697,9 +717,6 @@
                     </div>
                     <div class="col m3 s6"><img src="images/4.jpg">
                       <p>Wyrównanie - relacja na lata</p>
-                    </div>
-                    <div class="col m3 s6"><img src="images/kooperacja.jpg">
-                      <p>Współpraca</p>
                     </div>
                   </div>
                 </div>
@@ -725,8 +742,9 @@
                               "images/slawek.jpg">
                               <div class="overlay"><i class="small material-icons">play_for_work</i>
                                 <p>"Bąble nowego w morzu starego."<br>
-                                  <a class="grey-text text-lighten-3 right"></a><a href=
-                                  "https://www.facebook.com/profile.php?id=100004549983514"><i class="right fa fa-facebook-square fa-1x" aria-hidden="true"></i></a></p>
+                                  <a class="grey-text text-lighten-3 right"></a>
+                                  <a href="https://www.facebook.com/profile.php?id=100004549983514"><i class="right fa fa-facebook-square fa-1x" aria-hidden="true"></i></a>
+                                </p>
                                 </div>
                               </div>
                             </div>
@@ -793,7 +811,9 @@
                               "white-text small material-icons">play_for_work</i>
                               <p>"Konstelacje dla mnie to <br>pasja, biznes i styl życia"<br>
                                 <b class="overlaycite">Katarzyna Węgrzyn</b><br>
-                                <a class="grey-text text-lighten-3 right"></a></p>
+                                <a class="grey-text text-lighten-3 right"></a>
+                                <a href="https://www.facebook.com/profile.php?id=100014216671980"><i class="right fa fa-facebook-square fa-1x" aria-hidden="true"></i></a>
+                            </p>
                               </div>
                             </div>
                           </div>
@@ -802,8 +822,8 @@
                           <h5>Doświadczenie</h5>
                           Absolwentka Politechniki Gdańskiej. W 2008r ukończyłam studia na
                           wydziale Zarzadzania Zasobami Ludzkimi. Mam doświadczenie w
-                          coachingu biznesowym, specjalizuję się w rozwoju sprzedaży i
-                          budowaniu relacji. Przeprowadziłam setki warsztatów i konsultacji
+                          coachingu biznesowym, specjalizuję się w budowaniu relacji i rozwoju sprzedaży.
+                          Przeprowadziłam setki warsztatów i konsultacji
                           dla międzynarodowych korporacji. Od 2010 roku prowadzę firmę gdzie
                           udzielam konsultacji i realizuję projekty doradcze dla branży
                           bankowej, ubezpieczeniowej i konsultingowej.</div>
@@ -891,23 +911,22 @@
       terminów warsztatów i innych interesujących Państwa kwestii, proszę
       o kontakt telefoniczny lub za pomocą poniższego formularza.</p>
       <a class=
-      "sendme-button waves-effect waves-light btn purple darken-2 modal-trigger right"
+      "sendme-button waves-effect waves-light btn grey darken-2 modal-trigger right"
       href="#modal1">NAPISZ DO MNIE</a></div>
     </div>
     <!-- Modal Structure -->
     <div id="modal1" class="modal">
       <div class="modal-content">
         <h4>Formularz kontaktowy</h4>
-        <p>Zostaw wiadomość lub tylko namiar do siebie. Skontaktuję się z
+        <p>Zostaw wiadomość lub namiar do siebie. Skontaktuję się z
           Tobą!</p>
           <div class="row">
-            <form class="col s12" action=
-            "https://formspree.io/katarzyna.wegrzyn@wp.pl" method="post">
+            <form class="col s12" action="https://formspree.io/katarzyna.wegrzyn@wp.pl" method="post">
             <div class="row">
               <div class="input-field col s12"><i class=
-                "material-icons prefix">perm_identity</i> <input id="name4" type=
-                "text" name="name" class="validate"> <label for="name4">Imię i
-                  nazwisko</label></div>
+                "material-icons prefix">perm_identity</i> <input id="name4" type="text" name="name" class="validate">
+                <label for="name4">Imię i nazwisko</label>
+              </div>
                 </div>
                 <div class="row">
                   <div class="input-field col s6">
@@ -929,9 +948,7 @@
                           "materialize-textarea"></textarea>
                           <label for="textarea1">Twoja wiadomość</label></div>
                         </div>
-                      </form>
-                    </div>
-                    <div class="row">
+
                       <div class="col s12">
                         <p><input type="checkbox" id="zgoda7"> <label for="zgoda7">Wyrażam
                           zgodę na przetwarzanie powyższych danych osobowych przez
@@ -945,6 +962,7 @@
                             danych osobowych oraz ustawą z dnia 18 lipca 2002 r. o świadczeniu
                             usług drogą elektroniczną.</label></p>
                           </div>
+                          </form>
                         </div>
                       </div>
                       <div class="modal-footer"><a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Wyślij</a></div>
@@ -955,11 +973,8 @@
             <div class="container">
               <div class="row">
                 <div class="col m8 l7 s12">
-                  <div class="col m3 l2 s3"><a href="#"><img class="footer-wiatrak"
-                    src="images/wiatrak.png"></a></div>
+                  <div class="col m3 l2 s3"><a href="#"><img class="footer-wiatrak"src="images/logo-wizytowkowe.jpg"></a></div>
                     <div class="col m3 l5 s6">
-                      <h5 class="white-text footer-name1">Konstelacje Polska</h5>
-                      <h5 class="white-text footer-name">Katarzyna Węgrzyn</h5>
                     </div>
                     <div class="col m4 l4 s12">
                       <ul class="white-text footer-data">
@@ -983,11 +998,14 @@
                 <div class="container">
                   © BC 2016 All rights reserved
 
-                  <a class=" hidden grey-text text-lighten-3 right">
+                  <a class=" grey-text text-lighten-3 right" href="https://www.facebook.com/profile.php?id=100014216671980">
                     <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
                   </a>
                   <a class="grey-text text-lighten-3 right" href="https://pl.linkedin.com/in/wegrzynkatarzyna">
                     <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                  </a>
+                  <a class=" grey-text text-lighten-3 right">
+                    <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
                   </a>
                   <a class="right up-button red btn" href="#">
                     <i class="fa fa-angle-up" aria-hidden="true"></i>
