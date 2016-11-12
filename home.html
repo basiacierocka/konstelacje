@@ -131,9 +131,10 @@
                 </p>
                 <h4 class="center">Formularz kontaktowy</h4>
                 <div class="row">
-                  <form class="col s12" action="https://formspree.io/katarzyna.wegrzyn@wp.pl" method="post">
+                  <form class="col s12" action="https://formspree.io/basiacierocka@gmail.com" method="POST">
                   <div class="row">
-                    <div class="input-field col s6"><i class="material-icons prefix">perm_identity</i>
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">perm_identity</i>
                       <input id="name2" type="text" name="name" class="validate">
                       <label for="name2">Imię i Nazwisko</label></div>
 
@@ -142,34 +143,39 @@
                       <label for="email2">Twój Email</label></div>
 
                     <div class="input-field col s6"><i class="material-icons prefix">phone</i>
-                      <input id="icon_telephone2" type="tel" name="_replyto" class="validate">
+                      <input id="icon_telephone2" type="tel" name="telefon" class="validate">
                       <label for="icon_telephone2">Nr telefonu</label></div>
 
 
-                    <div class="input-field col s6"><i class="material-icons prefix">room</i>
-                     <select>
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">room</i>
+                     <select name="city">
                        <option value="1" selected>Gdańsk</option>
                        <option value="2">Poznań</option>
                        <option value="3">Warszawa</option>
                      </select>
                      <label>Miasto</label>
                    </div>
-                   <div class="input-field col s12"><i class="material-icons prefix">mode_edit</i>
+                   <div class="input-field col s12">
+                     <i class="material-icons prefix">mode_edit</i>
                      <input id="title2" type="text" name="title" value="Jestem zainteresowany/a Warsztatem Demonstracyjnym" class="validate">
                      <label for="title2">Tytuł</label></div>
-                     <div class="input-field col s12"><i class="material-icons prefix">message</i>
+                     <div class="input-field col s12">
+                       <i class="material-icons prefix">message</i>
                        <textarea id="textarea1" name="message" class="materialize-textarea"></textarea>
                        <label for="textarea1">Twoja wiadomość</label></div>
 
                   </div>
                   <div class="row">
                     <div class="col s12">
-                      <p><input type="checkbox" id="zgoda9"> <label for="zgoda9">Wyrażam
+                      <p><input type="checkbox" name="agreement1" id="zgoda9">
+                        <label for="zgoda9">Wyrażam
                         zgodę na przetwarzanie powyższych danych osobowych przez
                         Konstelacje Polska Katarzyna Węgrzyn w celu realizacji warsztatów i
                         konsultacji zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie
                         danych osobowych.</label></p>
-                        <p><input type="checkbox" id="zgoda10"> <label for="zgoda10">
+                        <p><input type="checkbox" name="agreement2" id="zgoda10">
+                          <label for="zgoda10">
                           Wyrażam zgodę na przetwarzanie powyższych danych
                           osobowych przez Konstelacje Polska Katarzyna Węgrzyn w celach
                           marketingowych i handlowych zgodnie z ustawą z dnia 29 sierpnia
@@ -177,10 +183,13 @@
                           2002 r. o świadczeniu usług drogą elektroniczną.</label></p>
                         </div>
                       </div>
-                    </form>
                   </div>
+
+                <div class="modal-footer">
+                  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat"><input type="submit" value="Wyślij"></a></div>
+                </form>
                 </div>
-                <div class="modal-footer"><a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Wyślij</a></div>
+
                 </div>
                 <video playsinline="" autoplay="" mute="" loop="" poster="images/business.jpg" id="bgvid"><source src="filmpink.mov" type="video/mp4"></video>
               </div>
